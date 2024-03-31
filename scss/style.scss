@@ -1,0 +1,90 @@
+//declaracion primarias para sobreescribir las de Boostrap//
+
+//importacion de Sass para bootstrap//
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+//formatting//
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../static/img/mainimg.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: space-between;
+  align-items: center;
+  header {
+    display: flex;
+    width: 100%;
+    padding: 0 10px 0 10px;
+    height: auto;
+    justify-content: center;
+    .navigator-container {
+      position: fixed;
+      display: flex;
+      width: fit-content;
+      height: auto;
+      background-color: rgba(0, 0, 0, 0.5);
+      justify-content: center;
+      align-items: center;
+      padding: 5px 5px 5px 5px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        li {
+          text-decoration: none;
+          list-style: none;
+          padding: 0 3px 0 3px;
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .others-container {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      .others-container-left {
+        display: flex;
+        width: 70%;
+        height: auto;
+        .language-container {
+          display: flex;
+          flex-direction: row;
+        }
+      }
+      .others-container-right {
+        display: flex;
+        width: 30%;
+        height: auto;
+        justify-content: space-between;
+        .socials-container {
+          display: flex;
+        }
+        .logReg-container {
+          display: flex;
+          a {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    height: 100px;
+    p {
+      color: white;
+    }
+  }
+}
