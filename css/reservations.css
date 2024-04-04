@@ -1,3 +1,41 @@
+.container {
+  display: flex;
+}
 
+.section-container {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-container_inner {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.section-container_inner div {
+  flex: 1;
+  width: 50%;
+  padding: 20px 20px 10px 20px;
+  justify-content: center;
+  align-items: center;
+}
+.section-container_inner div input {
+  size: 80px;
+}
+.section-container_inner form input[type=text],
+.section-container_inner form input[type=email],
+.section-container_inner form textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+.section-container_inner form input[type=submit] {
+  width: auto;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
 
 /*# sourceMappingURL=reservations.css.map */

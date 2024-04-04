@@ -11947,6 +11947,46 @@ header .others-container .others-container-right .logReg-container a {
   color: rgba(0, 0, 0, 0.5);
 }
 
+.container {
+  display: flex;
+}
+
+.section-container {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-container_inner {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.section-container_inner div {
+  flex: 1;
+  width: 50%;
+  padding: 20px 20px 10px 20px;
+  justify-content: center;
+  align-items: center;
+}
+.section-container_inner div input {
+  size: 80px;
+}
+.section-container_inner form input[type=text],
+.section-container_inner form input[type=email],
+.section-container_inner form textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+.section-container_inner form input[type=submit] {
+  width: auto;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11978,7 +12018,7 @@ body .general-container section .section-container {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 400px;
+  height: 80%;
 }
 body .general-container section .section-container .logo-container {
   width: 300px;
@@ -11987,8 +12027,8 @@ body .general-container section .section-container .logo-container {
 }
 body .general-container section .section-container .section-container_inner {
   background-color: yellow;
-  width: 500px;
-  height: 200px;
+  width: 80% px;
+  height: 80%;
 }
 
 /*# sourceMappingURL=style.css.map */
