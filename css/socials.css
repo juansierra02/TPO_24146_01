@@ -1,0 +1,59 @@
+.socials-container {
+  display: flex;
+  height: fit-content;
+  /* hover effect on button width */
+  /* button click effect*/
+}
+.socials-container .socials-container-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 35px;
+  height: 24px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.3s;
+  background-color: transparent;
+}
+.socials-container .socials-container-button .fa-xl {
+  line-height: 1;
+  padding: 0 5px 0 5px;
+  color: rgba(255, 255, 255, 0.7);
+  height: 24px;
+  width: 24px;
+  margin: 0;
+  align-self: center;
+  justify-self: center;
+}
+.socials-container .text {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition-duration: 0.3s;
+}
+.socials-container .socials-container-button:hover {
+  width: 125px;
+  border-radius: 40px;
+  transition-duration: 0.3s;
+}
+.socials-container .socials-container-button:hover .text {
+  opacity: 1;
+  width: 70%;
+  transition-duration: 0.3s;
+  padding-right: 10px;
+}
+.socials-container .socials-container-button:hover .fa-xl {
+  color: white;
+  transition-duration: 0.3s;
+}
+.socials-container .socials-container-button:active {
+  transform: translate(2px, 2px);
+}
+
+/*# sourceMappingURL=socials.css.map */

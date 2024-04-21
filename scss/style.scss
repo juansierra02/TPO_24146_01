@@ -10,6 +10,7 @@
 @import "menu.scss";
 @import "register.scss";
 @import "reservations.scss";
+@import "socials.scss";
 
 //formatting//
 * {
@@ -19,7 +20,7 @@
 }
 //general index//
 body {
-  background-image: url("../static/img/mainimg.jpg");
+  background-image: url("../static/img/slide1.jpeg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -32,8 +33,7 @@ body {
       justify-content: center;
       align-items: center;
       width: 100%;
-      height: fit-content;
-      background-color: red;
+      height: 600px;
       padding-bottom: 80px;
       .section-container {
         display: flex;
