@@ -12071,17 +12071,131 @@ header .others-container .others-container-right .logReg-container a {
   transform: translate(2px, 2px);
 }
 
+.section-container-index {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 700px;
+}
+.section-container-index .section-container-left {
+  display: flex;
+  width: 35%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.section-container-index .section-container-left img {
+  width: 50%;
+  height: auto;
+}
+.section-container-index .section-container-middle {
+  display: flex;
+  width: 30%;
+  height: 100%;
+  justify-content: center;
+  align-items: baseline;
+  margin-top: 150px;
+}
+.section-container-index .section-container-middle img {
+  width: 90%;
+  height: auto;
+  opacity: 0.9;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #161616);
+}
+.section-container-index .section-container-right {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  height: 100%;
+  justify-content: end;
+  align-items: end;
+  opacity: 0.6;
+  overflow: hidden;
+}
+.section-container-index .section-container-right .section-container-right_up {
+  display: flex;
+  height: 80px;
+  width: 70%;
+}
+.section-container-index .section-container-right .section-container-right_up img {
+  width: auto;
+  height: 100%;
+}
+.section-container-index .section-container-right .section-container-right_up .section-container-right_up_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 10px;
+}
+.section-container-index .section-container-right .section-container-right_up .section-container-right_up_text p {
+  width: fit-content;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+.section-container-index .section-container-right .section-container-right_mid {
+  display: flex;
+  height: 80px;
+  width: 85%;
+  margin-top: 30px;
+}
+.section-container-index .section-container-right .section-container-right_mid img {
+  width: auto;
+  height: 100%;
+}
+.section-container-index .section-container-right .section-container-right_mid .section-container-right_mid_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 10px;
+}
+.section-container-index .section-container-right .section-container-right_mid .section-container-right_mid_text p {
+  width: fit-content;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+.section-container-index .section-container-right .section-container-right_bottom {
+  display: flex;
+  height: 80px;
+  width: 100%;
+  margin-top: 30px;
+}
+.section-container-index .section-container-right .section-container-right_bottom img {
+  width: auto;
+  height: 100%;
+}
+.section-container-index .section-container-right .section-container-right_bottom .section-container-right_bottom_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 10px;
+}
+.section-container-index .section-container-right .section-container-right_bottom .section-container-right_bottom_text p {
+  width: fit-content;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+:root {
+  --animate-duration: 3s;
+  --animate-delay: 0s;
+}
+
 body {
   background-image: url("../static/img/slide1.jpeg");
   height: 100%;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
 }
 body .general-container {
@@ -12093,25 +12207,8 @@ body .general-container section {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 600px;
+  height: fit-content;
   padding-bottom: 80px;
-}
-body .general-container section .section-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 400px;
-}
-body .general-container section .section-container .logo-container {
-  width: 300px;
-  height: 300px;
-  background-color: blue;
-}
-body .general-container section .section-container .section-container_inner {
-  background-color: yellow;
-  width: 500px;
-  height: 200px;
 }
 
 /*# sourceMappingURL=style.css.map */
