@@ -11,5 +11,6 @@
   "dependencies": {
     "bootstrap": "^5.3.3"
   },
-  "keywords": []
+  "keywords": [],
+  "devDependencies": {}
 }
