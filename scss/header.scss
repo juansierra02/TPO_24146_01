@@ -8,11 +8,11 @@ header {
     position: fixed;
     display: flex;
     width: fit-content;
-    height: auto;
+    height: fit-content;
     background-color: rgba(0, 0, 0, 0.5);
     justify-content: center;
     align-items: center;
-    padding: 10px 15px 5px 15px;
+    padding: 15px 25px 10px 25px;
     margin: -10px 0 0 0;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -23,14 +23,14 @@ header {
       li {
         text-decoration: none;
         list-style: none;
-        padding: 0 5px 0 5px;
+        padding: 0 10px 0 10px;
         a {
           text-decoration: none;
-          color: rgba(255, 255, 255, 0.5);
+          color: rgba(255, 255, 255, 0.7);
         }
         a:hover {
-          color: rgba(255, 255, 255, 0.8);
-          transition: 0.3s ease-in-out;
+          color: rgba(255, 255, 255, 1);
+          transition: 0.4s ease-in-out;
         }
       }
     }
@@ -48,6 +48,7 @@ header {
         width: auto;
         height: fit-content;
         margin-right: 10px;
+        user-select: none;
         span {
           color: rgba(255, 255, 255, 0.5);
         }
@@ -66,24 +67,22 @@ header {
       width: 30%;
       height: auto;
       justify-content: space-between;
-      .socials-container {
-        display: flex;
-        .fa-xl {
-          line-height: 1;
-          padding: 0 5px 0 5px;
-          color: rgba(0, 0, 0, 0.5);
-        }
-      }
       .logReg-container {
         display: flex;
+        height: fit-content;
         p {
-          color: rgba(0, 0, 0, 0.5);
+          color: rgba(255, 255, 255, 0.8);
           padding: 0 5px 0 5px;
+          line-height: normal;
+          height: fit-content;
+          margin-bottom: 0;
+          user-select: none;
         }
         a {
           cursor: pointer;
           text-decoration: none;
-          color: rgba(0, 0, 0, 0.5);
+          color: rgba(255, 255, 255, 0.8);
+          line-height: normal;
         }
       }
     }

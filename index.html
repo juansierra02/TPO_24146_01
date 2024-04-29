@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Animate.css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!--hojas de estilo css-->
     <link rel="stylesheet" href="css/style.css" />
     <!--scripts-->
@@ -35,11 +40,20 @@
               <img src="./static/img/spaflag.svg" alt="language-flag" />
             </div>
           </div>
-
           <div class="others-container-right">
             <div class="socials-container">
-              <a href="#"><i class="fa-brands fa-facebook fa-xl"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
+              <button class="socials-container-button">
+                <a href="http://www.facebook.com" target="_blank"
+                  ><i class="fa-brands fa-square-facebook fa-xl"></i
+                ></a>
+                <div class="text">Facebook</div>
+              </button>
+              <button class="socials-container-button">
+                <a href="http://www.instagram.com" target="_blank"
+                  ><i class="fa-brands fa-instagram fa-xl"></i
+                ></a>
+                <div class="text">Instagram</div>
+              </button>
             </div>
             <div class="logReg-container">
               <a href="templates/login.html">Login</a>
@@ -50,14 +64,70 @@
         </div>
       </header>
       <section>
-        <div class="section-container">
-          <div class="logo-container">
-            <img src="#" alt="logo" />
+        <div class="section-container-index">
+          <div class="section-container-left"></div>
+          <div class="section-container-middle">
+            <img
+              class="animate__animated animate__fadeIn"
+              src="./static/img/andinaw.png"
+              alt="logo"
+            />
+          </div>
+          <div class="section-container-right">
+            <div
+              class="section-container-right_up animate__animated animate__slideInRight"
+            >
+              <img src="./static/img/michelinw.png" alt="michelinstar" />
+              <div class="section-container-right_up_text">
+                <p>2024</p>
+                <p>Michelin Star</p>
+              </div>
+            </div>
+            <div
+              class="section-container-right_mid animate__animated animate__slideInRight"
+            >
+              <img src="./static/img/zagatw.png" alt="zagatguideprice" />
+              <div class="section-container-right_mid_text">
+                <p>2022/24</p>
+                <p>Incluido en guia La Zagat</p>
+              </div>
+            </div>
+            <div
+              class="section-container-right_bottom animate__animated animate__slideInRight"
+            >
+              <img src="./static/img/repsolw.png" alt="solesrepsol" />
+              <div class="section-container-right_bottom_text">
+                <p>Soles Guia Repsol</p>
+                <p>2021</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <footer>
-        <p>otra informacion</p>
+        <div class="footer-container-l">
+          <aside class="footer-container-l_left">
+            <p>Mapa del Sitio</p>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="templates/menu.html">Menu</a></li>
+              <li><a href="templates/about_us.html">Nosotros</a></li>
+              <li><a href="templates/reservations.html">Reservas</a></li>
+              <li><a href="templates/register.html">Registro</a></li>
+              <li><a href="templates/login.html">Login</a></li>
+            </ul>
+          </aside>
+          <aside class="footer-container-l_right">
+            <p class="footer-container-l_right_title">Datos de relevancia:</p>
+            <p>Domicilio: Av. del Libertador 4450</p>
+            <p>Horario: Lun. a Dom. 12:00 a 00:00hs</p>
+            <p>Telefono (wpp): (011)5442-1223</p>
+            <p>Email: andesresto@gmail.com</p>
+          </aside>
+        </div>
+        <div class="footer-container-r">
+          <p>Codo a Codo, 2024, todos los derechos reservados</p>
+        </div>
       </footer>
     </div>
   </body>
