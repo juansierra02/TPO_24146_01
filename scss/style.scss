@@ -10,6 +10,8 @@
 @import "menu.scss";
 @import "register.scss";
 @import "reservations.scss";
+@import "socials.scss";
+@import "index.scss";
 
 //formatting//
 * {
@@ -17,12 +19,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+//Animate.css presets//
+:root {
+  --animate-duration: 3s;
+  --animate-delay: 0s;
+}
+
 //general index//
 body {
-  background-image: url("../static/img/mainimg.jpg");
+  background-image: url("../static/img/slide1.jpeg");
   height: 100%;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
   .general-container {
     position: relative;
@@ -33,25 +42,7 @@ body {
       align-items: center;
       width: 100%;
       height: fit-content;
-      background-color: red;
       padding-bottom: 80px;
-      .section-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 80%;
-        .logo-container {
-          width: 300px;
-          height: 300px;
-          background-color: blue;
-        }
-        .section-container_inner {
-          background-color: yellow;
-          width: 80%px;
-          height: 80%;
-        }
-      }
     }
   }
 }
