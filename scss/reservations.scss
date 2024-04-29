@@ -1,51 +1,40 @@
-.container {
+.section-container-reservations {
+  display: flex;
+  justify-content: space-between;
+  height: 700px;
+  width: 60%;
+  .section-container_inner {
     display: flex;
-}
-
-.section-container {
-    margin-top: 5rem;
-    display: flex;
-    justify-content: space-between; // Para distribuir los elementos hijos uniformemente
-}
-
-
-.section-container_inner {
-    display: flex;
-    flex-direction: row; // Los elementos hijos se colocarán uno al lado del otro en una fila
-    gap: 10px; // Espacio entre los elementos hijos
-}
-
-.section-container_inner {
-    div {
-        flex: 1; // Los elementos hijos ocuparán el mismo espacio dentro del contenedor
-        //border: 1px solid;
-        width: 50%;
-        padding: 20px 20px 10px 20px; // Los elementos hijos
-        justify-content: center;
-        align-items: center;
-
-        input {
-            size: 80px;
-        }
+    gap: 10px;
+    width: 100%;
+    .section-container_inner_left {
+      flex: 1; // Los elementos hijos ocuparán el mismo espacio dentro del contenedor
+      width: 50%;
+      padding: 20px 20px 10px 20px;
+      input {
+        size: 40px;
+      }
     }
-
-    form {
-
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            width: 100%; // Establece el ancho al 100% del contenedor
-            padding: 10px; // Añade un relleno de 10px alrededor del contenido del input
-            box-sizing: border-box; // Incluye el relleno y el borde en el tamaño total
-            margin-bottom: 10px; // Añade un margen inferior de 10px entre los inputs
-        }
-
-        input[type="submit"] {
-            width: auto; // El botón de enviar tomará su ancho automáticamente
-            padding: 10px 20px; // Ajusta el relleno para el botón de enviar
-            margin-top: 10px; // Añade un margen superior de 10px al botón de enviar
-        }
+    .section-container_inner_right {
+      flex: 1; // Los elementos hijos ocuparán el mismo espacio dentro del contenedor
+      width: 50%;
+      padding: 20px 20px 10px 20px;
     }
+  }
 
-
+  form {
+    color: white;
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    input[type="submit"] {
+      width: auto;
+      padding: 10px 20px;
+      margin-top: 10px;
+    }
+  }
 }

@@ -12013,41 +12013,41 @@ header .others-container .others-container-right .logReg-container a {
   line-height: normal;
 }
 
-.container {
-  display: flex;
-}
-
-.section-container {
-  margin-top: 5rem;
+.section-container-reservations {
   display: flex;
   justify-content: space-between;
+  height: 700px;
+  width: 60%;
 }
-
-.section-container_inner {
+.section-container-reservations .section-container_inner {
   display: flex;
-  flex-direction: row;
   gap: 10px;
+  width: 100%;
 }
-
-.section-container_inner div {
+.section-container-reservations .section-container_inner .section-container_inner_left {
   flex: 1;
   width: 50%;
   padding: 20px 20px 10px 20px;
-  justify-content: center;
-  align-items: center;
 }
-.section-container_inner div input {
-  size: 80px;
+.section-container-reservations .section-container_inner .section-container_inner_left input {
+  size: 40px;
 }
-.section-container_inner form input[type=text],
-.section-container_inner form input[type=email],
-.section-container_inner form textarea {
+.section-container-reservations .section-container_inner .section-container_inner_right {
+  flex: 1;
+  width: 50%;
+  padding: 20px 20px 10px 20px;
+}
+.section-container-reservations form {
+  color: white;
+}
+.section-container-reservations form input[type=text],
+.section-container-reservations form input[type=email],
+.section-container-reservations form textarea {
   width: 100%;
   padding: 10px;
-  box-sizing: border-box;
   margin-bottom: 10px;
 }
-.section-container_inner form input[type=submit] {
+.section-container-reservations form input[type=submit] {
   width: auto;
   padding: 10px 20px;
   margin-top: 10px;
