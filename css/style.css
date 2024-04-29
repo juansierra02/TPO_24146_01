@@ -12134,6 +12134,7 @@ header .others-container .others-container-right .logReg-container a {
   padding: 0;
   margin: 0;
   color: white;
+  user-select: none;
 }
 .section-container-index .section-container-right .section-container-right_mid {
   display: flex;
@@ -12156,6 +12157,7 @@ header .others-container .others-container-right .logReg-container a {
   padding: 0;
   margin: 0;
   color: white;
+  user-select: none;
 }
 .section-container-index .section-container-right .section-container-right_bottom {
   display: flex;
@@ -12178,6 +12180,7 @@ header .others-container .others-container-right .logReg-container a {
   padding: 0;
   margin: 0;
   color: white;
+  user-select: none;
 }
 
 * {
