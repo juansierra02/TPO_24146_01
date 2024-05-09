@@ -12016,8 +12016,9 @@ header .others-container .others-container-right .logReg-container a {
 .section-container-reservations {
   display: flex;
   justify-content: space-between;
-  height: 700px;
+  height: 720px;
   width: 60%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .section-container-reservations .section-container_inner {
   display: flex;
@@ -12036,6 +12037,7 @@ header .others-container .others-container-right .logReg-container a {
   flex: 1;
   width: 50%;
   padding: 20px 20px 10px 20px;
+  color: white;
 }
 .section-container-reservations form {
   color: white;
