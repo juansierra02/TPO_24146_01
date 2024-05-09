@@ -9,8 +9,8 @@
   "author": "Julian Stradolini",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.3.3"
+    "bootstrap": "^5.3.3",
+    "sweetalert2": "^11.10.8"
   },
-  "keywords": [],
-  "devDependencies": {}
+  "keywords": []
 }

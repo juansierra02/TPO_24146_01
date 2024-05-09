@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--hojas de estilo css-->
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="/node_modules/sweetalert2/dist/sweetalert2.min.css" />
     <!--scripts-->
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/main.js"></script>
-    <script
-      src="https://kit.fontawesome.com/82e0355a8f.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/82e0355a8f.js" crossorigin="anonymous" ></script>
     <!-- fonts-->
     <title>Reservas</title>
   </head>
@@ -62,13 +60,7 @@
         <div class="section-container-reservations">
           <div class="section-container_inner">
             <div class="section-container_inner_left">
-              <form
-                action="#"
-                method="post"
-                aria-label="Contact form"
-                novalidate="novalidate"
-                data-status="init"
-              >
+              <form id="form_reservas" method="post" aria-label="Contact form" novalidate="novalidate" data-status="init" >
                 <h3>Nombre</h3>
                 <p><input type="text" name="your-name" /></p>
                 <h3>Correo electrónico</h3>
@@ -101,9 +93,7 @@
               <h5 style="color: #00e1ff; text-align: center">
                 <strong>Horario de atención</strong> de Lunes a Sábado de 8 a
                 21:30h.<br /><strong>Reservaciones</strong> únicamente vía
-                telefónica al teléfono:<br /><a href="tel:11-2254 3743"
-                  >(11) 2254 3743</a
-                >
+                telefónica al teléfono:<br /><a href="tel:11-2254 3743">(11) 2254 3743</a>
               </h5>
               <p style="text-align: center">
                 <em>Escribenos en WhatsApp</em> para más información: <br /><a
@@ -144,5 +134,6 @@
         </div>
       </footer>
     </div>
+    <script src="/node_modules/sweetalert2/dist/sweetalert2.all.min.js" defer></script>
   </body>
 </html>
