@@ -29,10 +29,12 @@ jobs:
       - name: Install deps
         run: npm i
 
-      # Deploy to Github Pages
-      - name: Deploy to Pages
-        uses: crazy-max/ghaction-github-pages@v4.0.0
+      - name: Deploy GitHub Pages site
+        uses: actions/deploy-pages@v4.0.5
         with:
-            build_dir: TPO_24146_01
+            # GitHub token
+            token: ${{ github.token }}
+
+          
 
 
