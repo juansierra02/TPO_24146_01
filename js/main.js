@@ -45,7 +45,7 @@ function enviarFormulario() {
         text: "Gracias por elegirnos para tu reserva. ¡Esperamos verte pronto!",
         icon: "success",
         willClose: () => {
-            window.location.href = "/index.html";
+            window.location.href = "../index.html";
         }
     });
 }
