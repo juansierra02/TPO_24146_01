@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--hojas de estilo css-->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="/node_modules/sweetalert2/dist/sweetalert2.min.css" />
+    <!--scripts-->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="https://kit.fontawesome.com/82e0355a8f.js" crossorigin="anonymous" ></script>
+    <!-- fonts-->
+    <title>Reservas</title>
+  </head>
+  <body>
+    <div class="general-container">
+      <header>
+        <nav class="navigator-container">
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about_us.html">Nosotros</a></li>
+            <li><a href="reservations.html">Reservas</a></li>
+          </ul>
+        </nav>
+        <div class="others-container">
+          <div class="others-container-left">
+            <div class="language-container_text">
+              <span>Idioma /</span>
+            </div>
+            <div class="language-container_image">
+              <img src="../static/img/spaflag.svg" alt="language-flag" />
+            </div>
+          </div>
+          <div class="others-container-right">
+            <div class="socials-container">
+              <button class="socials-container-button">
+                <a href="http://www.facebook.com" target="_blank"
+                  ><i class="fa-brands fa-square-facebook fa-xl"></i
+                ></a>
+                <div class="text">Facebook</div>
+              </button>
+              <button class="socials-container-button">
+                <a href="http://www.instagram.com" target="_blank"
+                  ><i class="fa-brands fa-instagram fa-xl"></i
+                ></a>
+                <div class="text">Instagram</div>
+              </button>
+            </div>
+            <div class="logReg-container">
+              <a href="login.html">Login</a>
+              <p>/</p>
+              <a href="register.html">Registrarse</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section>
+        <div class="section-container-reservations">
+          <div class="section-container_inner">
+            <div class="section-container_inner_left">
+              <form id="form_reservas" method="post" aria-label="Contact form" novalidate="novalidate" data-status="init" >
+                <h3>Nombre</h3>
+                <p><input type="text" name="your-name" /></p>
+                <h3>Correo electrónico</h3>
+                <p><input type="email" name="your-email" /></p>
+                <h3>Asunto</h3>
+                <p><input type="text" name="your-subject" /></p>
+                <h3>Mensaje</h3>
+                <p><textarea rows="8" name="your-message"></textarea></p>
+                <p><input type="submit" value="Enviar" /></p>
+              </form>
+            </div>
+            <div class="section-container_inner_right">
+              <h3 style="text-align: center">
+                Conoce <strong>Comida Andina</strong>
+              </h3>
+              <p style="text-align: center">
+                Reserva una mesa o el menú del día, pide que lleven la comida a
+                tu hogar<br />
+                o expresa tu opinión sobre nuestro restaurante.
+              </p>
+              <p style="text-align: center">
+                Contamos que te <strong>Gusto</strong>, así como con la
+                <em>la Atencion que reciviste<br /></em>Servicio a domicilio sin
+                costo a 5 Km a la redonda.
+              </p>
+              <p style="text-align: center">
+                Recibe <strong>un trago de Fernet de cortesía<br /></strong>con
+                tu plato de picada, a partir de las 4pm.
+              </p>
+              <h5 style="color: #00e1ff; text-align: center">
+                <strong>Horario de atención</strong> de Lunes a Sábado de 8 a
+                21:30h.<br /><strong>Reservaciones</strong> únicamente vía
+                telefónica al teléfono:<br /><a href="tel:11-2254 3743">(11) 2254 3743</a>
+              </h5>
+              <p style="text-align: center">
+                <em>Escribenos en WhatsApp</em> para más información: <br /><a
+                  href="//wa.me/+541122543743"
+                  >(11)&nbsp;2254 3743</a
+                >
+              </p>
+              <p style="text-align: center">
+                <strong>Gracias por preferir <em>Comida Andina</em></strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="footer-container-l">
+          <aside class="footer-container-l_left">
+            <p>Mapa del Sitio</p>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../templates/menu.html">Menu</a></li>
+              <li><a href="../templates/about_us.html">Nosotros</a></li>
+              <li><a href="reservations.html">Reservas</a></li>
+              <li><a href="../templates/register.html">Registro</a></li>
+              <li><a href="../templates/login.html">Login</a></li>
+            </ul>
+          </aside>
+          <aside class="footer-container-l_right">
+            <p class="footer-container-l_right_title">Datos de relevancia:</p>
+            <p>Domicilio: Av. del Libertador 4450</p>
+            <p>Horario: Lun. a Dom. 12:00 a 00:00hs</p>
+            <p>Telefono (wpp): (011)5442-1223</p>
+            <p>Email: andesresto@gmail.com</p>
+          </aside>
+        </div>
+        <div class="footer-container-r">
+          <p>Codo a Codo, 2024, todos los derechos reservados</p>
+        </div>
+      </footer>
+    </div>
+    <script src="/node_modules/sweetalert2/dist/sweetalert2.all.min.js" defer></script>
+  </body>
+</html>
