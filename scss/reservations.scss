@@ -1,24 +1,34 @@
 .section-container-reservations {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  height: 700px;
-  width: 60%;
+  align-items: center;
+  height: fit-content;
+  width: 30%;
+  margin: 10px 0 10px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  .section-container-reservations-banner {
+    width: 90%;
+    height: 100px;
+    background-color: red;
+  }
   .section-container_inner {
     display: flex;
+    flex-direction: column;
     gap: 10px;
     width: 100%;
-    .section-container_inner_left {
+    .section-container_inner_top {
       flex: 1; // Los elementos hijos ocuparán el mismo espacio dentro del contenedor
-      width: 50%;
+      width: 90%;
+      color: white;
+    }
+    .section-container_inner_bottom {
+      flex: 1; // Los elementos hijos ocuparán el mismo espacio dentro del contenedor
+      width: 100%;
       padding: 20px 20px 10px 20px;
       input {
-        size: 40px;
+        size: 20px;
       }
-    }
-    .section-container_inner_right {
-      flex: 1; // Los elementos hijos ocuparán el mismo espacio dentro del contenedor
-      width: 50%;
-      padding: 20px 20px 10px 20px;
     }
   }
 
@@ -28,8 +38,7 @@
     input[type="email"],
     textarea {
       width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
+      max-height: 200px;
     }
     input[type="submit"] {
       width: auto;

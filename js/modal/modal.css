@@ -1,0 +1,85 @@
+.modal {
+    display: none; /* Por defecto, ocultar la modal */
+    position: fixed;
+    z-index: 1000; /* Asegura que la modal esté por encima del resto del contenido */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+    overflow: auto; /* Habilita el desplazamiento si el contenido de la modal es demasiado grande */
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* Centra la modal verticalmente y la separa del borde superior */
+    padding: 20px;
+    border: 1px solid #ccc; /* Borde más suave */
+    border-radius: 5px; /* Bordes redondeados */
+    width: 80%;
+    max-width: 600px; /* Ancho máximo de la modal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+
+  /* Estilos para el header de la modal */
+.modal-header {
+    padding: 0px;
+    border-bottom: 1px solid #ccc; /* Borde inferior para separar el header del body */
+  }
+
+  /* Estilos para el body de la modal */
+.modal-body {
+    padding: 15px;
+  }
+
+  /* Estilos para el footer de la modal */
+.modal-footer {
+  padding: 0px;
+  padding-top: 12px;
+  border-top: 1px solid #ccc; /* Borde superior para separar el footer del body */
+}
+
+  .close {
+    color: #aaa;
+    position: absolute;
+    top: 10px; /* Ajusta la posición vertical según sea necesario */
+    right: 10px; /* Ajusta la posición horizontal según sea necesario */
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+  }
+
+  /* Estilos para el botón de cancelar */
+.btn-cancelar {
+    background-color: #ccc;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; /* Espacio entre botones */
+  }
+
+  .btn-cancelar:hover {
+    background-color: #bbb;
+  }
+
+  /* Estilos para el botón de aceptar */
+  .btn-aceptar {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .btn-aceptar:hover {
+    background-color: #0056b3;
+  }
