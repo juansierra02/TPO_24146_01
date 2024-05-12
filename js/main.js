@@ -21,16 +21,32 @@ document.addEventListener("DOMContentLoaded", function() {
         var subject = form.querySelector('input[name="your-subject"]').value.trim();
         var message = form.querySelector('textarea[name="your-message"]').value.trim();
 
-        // Verificar que los campos requeridos no estén vacíos
-        if (name === '' || email === '' || subject === '' || message === '') {
-            alert('Por favor, complete todos los campos.');
-            return false;
+        var campos = ['your-name', 'your-email', 'your-subject', 'your-message'];
+        var mensajes = ['Nombre', 'Correo Electrónico', 'Asunto', 'Mensaje'];
+
+        for (var i = 0; i < campos.length; i++) {
+            var valor = form.querySelector('input[name="' + campos[i] + '"], textarea[name="' + campos[i] + '"]').value.trim();
+            if (valor === '') {
+                Swal.fire({
+                    icon: "error",
+                    title: "Por favor",
+                    html:'complete el campo <strong>' + mensajes[i] + '</strong>.!',
+                    confirmButtonColor: "#d63030",
+                });
+                return false;
+            }
         }
 
         // Validar el formato del correo electrónico
         var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) {
-            alert('Por favor, ingrese un correo electrónico válido.');
+            Swal.fire({
+                icon: "error",
+                title: "Por favor",
+                html:'ingrese un <strong>correo electrónico válido</strong>.',
+                confirmButtonColor: "#d63030",
+            });
+            //alert('Por favor, ingrese un correo electrónico válido.');
             return false;
         }
         return true; // El formulario es válido
@@ -44,6 +60,7 @@ function enviarFormulario() {
         title: "¡Reserva exitosa!",
         text: "Gracias por elegirnos para tu reserva. ¡Esperamos verte pronto!",
         icon: "success",
+        confirmButtonColor: "#3085d6",
         willClose: () => {
             window.location.href = "../index.html";
         }
