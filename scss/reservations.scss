@@ -1,49 +1,142 @@
 .section-container-reservations {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
   height: fit-content;
-  width: 30%;
-  margin: 10px 0 10px 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  .section-container-reservations-banner {
-    width: 90%;
-    height: 100px;
-    background-color: red;
-  }
-  .section-container_inner {
+  width: 100%;
+  .section-container-reservations_inner {
+    background-color: rgba(0, 0, 0, 0.9);
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    .section-container_inner_top {
-      flex: 1; // Los elementos hijos ocuparán el mismo espacio dentro del contenedor
-      width: 90%;
-      color: white;
-    }
-    .section-container_inner_bottom {
-      flex: 1; // Los elementos hijos ocuparán el mismo espacio dentro del contenedor
-      width: 100%;
-      padding: 20px 20px 10px 20px;
-      input {
-        size: 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+    height: fit-content;
+    margin: 40px 0 0 0;
+    .section-container-reservations-banner {
+      width: 97%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 0 0 0;
+      object-fit: cover;
+      img {
+        width: 100%;
+        height: auto;
       }
     }
-  }
-
-  form {
-    color: white;
-    input[type="text"],
-    input[type="email"],
-    textarea {
+    .section-container_inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       width: 100%;
-      max-height: 200px;
-    }
-    input[type="submit"] {
-      width: auto;
-      padding: 10px 20px;
-      margin-top: 10px;
+      height: 70%;
+      color: rgba(255, 255, 255, 0.7);
+      margin: 10px 0 0 0;
+      .section-container_inner_top {
+        width: 97%;
+        height: 40%;
+        font-size: 0.9rem;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+        h6 {
+          width: fit-content;
+          padding-bottom: 5px;
+          margin: 0;
+        }
+        p {
+          height: fit-content;
+          margin: 0;
+          padding: 3px 0 3px 0;
+        }
+        .section-container_inner_top_main {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-width: 1px;
+          border-color: transparent;
+          border-bottom-color: rgba(255, 255, 255, 0.3);
+          border-style: solid;
+          margin-bottom: 5px;
+          padding-bottom: 3px;
+          border-width: 1px;
+          p {
+            margin: 0;
+            padding: 0;
+          }
+        }
+      }
+      .section-container_inner_bottom {
+        width: 97%;
+        height: 40%;
+        padding: 0 20px 0px 20px;
+        p {
+          padding: 0;
+          margin: 5px 0 2px 0;
+        }
+        form {
+          font-size: 0.8rem;
+          color: rgba(255, 255, 255, 0.7);
+          input {
+            background-color: rgba(56, 56, 56, 0.5);
+            border-style: none;
+            outline: none;
+            border: 1px solid transparent;
+            color: rgba(255, 255, 255, 0.7);
+            padding: 3px 0 3px 5px;
+          }
+          input:focus {
+            border-color: rgba(255, 255, 255, 0.3);
+          }
+          .form-container_top {
+            display: flex;
+            height: 25%;
+            .form-container_top_left {
+              width: 50%;
+              input {
+                width: 90%;
+              }
+            }
+            .form-container_top_right {
+              width: 50%;
+              input {
+                width: 100%;
+              }
+            }
+          }
+          .form-container_mid {
+            width: 100%;
+            height: 25%;
+            input {
+              width: 100%;
+            }
+          }
+          .form-container_bottom {
+            width: 100%;
+            height: 50%;
+            textarea {
+              width: 100%;
+              max-height: 130px;
+              background-color: rgba(56, 56, 56, 0.5);
+              border-style: none;
+              outline: none;
+              border: 1px solid transparent;
+              color: rgba(255, 255, 255, 0.7);
+              padding: 3px 0 3px 5px;
+            }
+            textarea:focus {
+              border-color: rgba(255, 255, 255, 0.3);
+            }
+          }
+          input[type="submit"] {
+            width: auto;
+            padding: 10px 20px;
+            margin: 10px 0 15px 0;
+          }
+        }
+      }
     }
   }
 }

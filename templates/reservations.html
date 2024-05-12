@@ -65,61 +65,60 @@
 
       <section>
         <div class="section-container-reservations">
-          <div class="section-container-reservations-banner">
-            <img src="#" alt="logo banner" />
-          </div>
-          <div class="section-container_inner">
-            <div class="section-container_inner_bottom">
-              <form
-                id="form_reservas"
-                method="post"
-                aria-label="Contact form"
-                novalidate="novalidate"
-                data-status="init"
-              >
-                <p>Nombre</p>
-                <p><input type="text" name="your-name" /></p>
-                <p>Correo electrónico</p>
-                <p><input type="email" name="your-email" /></p>
-                <p>Asunto</p>
-                <p><input type="text" name="your-subject" /></p>
-                <p>Mensaje</p>
-                <p><textarea rows="8" name="your-message"></textarea></p>
-                <p><input type="submit" value="Enviar" /></p>
-              </form>
+          <div class="section-container-reservations_inner">
+            <div class="section-container-reservations-banner">
+              <img src="../static/img/banner.png" alt="logo banner" />
             </div>
-            <div class="section-container_inner_top">
-              <p>Conoce <strong>Comida Andina</strong></p>
-              <p>
-                Reserva una mesa o el menú del día, pide que lleven la comida a
-                tu hogar<br />
-                o expresa tu opinión sobre nuestro restaurante.
-              </p>
-              <p>
-                Contamos que te <strong>Gusto</strong>, así como con la
-                <em>la Atencion que reciviste<br /></em>Servicio a domicilio sin
-                costo a 5 Km a la redonda.
-              </p>
-              <p>
-                Recibe <strong>un trago de Fernet de cortesía<br /></strong>con
-                tu plato de picada, a partir de las 4pm.
-              </p>
-              <p>
-                <strong>Horario de atención</strong> de Lunes a Sábado de 8 a
-                21:30h.<br /><strong>Reservaciones</strong> únicamente vía
-                telefónica al teléfono:<br /><a href="tel:11-2254 3743"
-                  >(11) 2254 3743</a
+            <div class="section-container_inner">
+              <div class="section-container_inner_top">
+                <h6>Conoce <strong>Comida Andina</strong></h6>
+                <div class="section-container_inner_top_main">
+                  <p>
+                    Reserva una mesa o el menú del día, pide que lleven la
+                    comida a tu hogar o expresa tu opinión sobre nuestro
+                    restaurante.
+                  </p>
+                </div>
+                <p>Servicio a domicilio sin costo a 5 Km a la redonda.</p>
+                <p>
+                  Recibe <strong>un trago de Fernet de cortesía </strong>con tu
+                  plato de picada, a partir de las 4pm.
+                </p>
+                <p>
+                  <strong>Reservas</strong> únicamente vía telefónica o whatsapp
+                  al: <a href="tel:11-2254 3743">(11) 2254 3743</a>
+                </p>
+                <!-- <p>Gracias por tu visita!</p> -->
+              </div>
+              <div class="section-container_inner_bottom">
+                <form
+                  id="form_reservas"
+                  method="post"
+                  aria-label="Contact form"
+                  novalidate="novalidate"
+                  data-status="init"
                 >
-              </p>
-              <p>
-                <em>Escribenos en WhatsApp</em> para más información: <br /><a
-                  href="//wa.me/+541122543743"
-                  >(11)&nbsp;2254 3743</a
-                >
-              </p>
-              <p>
-                <strong>Gracias por preferir <em>Comida Andina</em></strong>
-              </p>
+                  <div class="form-container_top">
+                    <div class="form-container_top_left">
+                      <p>Nombre</p>
+                      <input type="text" name="your-name" />
+                    </div>
+                    <div class="form-container_top_right">
+                      <p>Email</p>
+                      <input type="email" name="your-email" />
+                    </div>
+                  </div>
+                  <div class="form-container_mid">
+                    <p>Asunto</p>
+                    <input type="text" name="your-subject" />
+                  </div>
+                  <div class="form-container_bottom">
+                    <p>Mensaje</p>
+                    <textarea rows="6" name="your-message"></textarea>
+                  </div>
+                  <input type="submit" value="Enviar" />
+                </form>
+              </div>
             </div>
           </div>
         </div>
