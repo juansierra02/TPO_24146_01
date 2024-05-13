@@ -69,7 +69,7 @@ function enviarFormulario() {
 
 function login() {
     Swal.fire({
-        imageUrl: "../static/img/banner.png",
+        imageUrl: "../static/img/banner.png", 
         title: 'Iniciar sesión',
         html:
             '<input id="swal-input1" class="swal2-input" placeholder="Usuario">' +
