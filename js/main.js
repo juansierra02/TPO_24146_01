@@ -54,7 +54,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 
-
 function enviarFormulario() {
     Swal.fire({
         title: "¡Reserva exitosa!",
@@ -65,4 +64,57 @@ function enviarFormulario() {
             window.location.href = "../index.html";
         }
     });
+}
+
+
+function login() {
+    Swal.fire({
+        imageUrl: "/static/img/banner.png",
+        title: 'Iniciar sesión',
+        html:
+            '<input id="swal-input1" class="swal2-input" placeholder="Usuario">' +
+            '<input id="swal-input2" class="swal2-input" placeholder="Contraseña" type="password"><br>'+
+            '<a href="#"><b>Olvido su contraseña?</b></a>',
+
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        confirmButtonText: 'Iniciar sesión',
+        cancelButtonText: 'Cancelar',
+        showLoaderOnConfirm: true,
+
+        preConfirm: () => {
+            const usuario = Swal.getPopup().querySelector('#swal-input1').value;
+            const contraseña = Swal.getPopup().querySelector('#swal-input2').value;
+
+            return validarCredenciales(usuario, contraseña);
+        },
+        allowOutsideClick: () => !Swal.isLoading()
+    }).then((result) => {
+        if (result.value.success) {
+            Swal.fire({
+                imageUrl: "/static/img/banner.png",
+                title: `¡Hola ${result.value.usuario}!`,
+                //icon: 'success',
+                confirmButtonColor: "#3085d6",
+                text: 'Inicio de sesión exitoso'
+            });
+        } else {
+            Swal.fire({
+                imageUrl: "/static/img/banner.png",
+                title: 'Error',
+                //icon: 'error',
+                confirmButtonColor: "#d63030",
+                text: 'Credenciales incorrectas'
+            });
+        }
+    });
+}
+
+function validarCredenciales(usuario, contraseña) {
+    // Hardcodeamos el usuario y la contraseña
+    if (usuario === 'usuario' && contraseña === 'contraseña') {
+        return Promise.resolve({ success: true, usuario: usuario });
+    } else {
+        return Promise.resolve({ success: false });
+    }
 }

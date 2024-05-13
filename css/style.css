@@ -12126,6 +12126,17 @@ header .others-container .others-container-right .logReg-container a {
 .section-container-reservations .section-container-reservations_inner .section-container_inner .section-container_inner_bottom form .form-container_top .form-container_top_right input {
   width: 100%;
 }
+.section-container-reservations .section-container-reservations_inner .section-container_inner .section-container_inner_bottom form .form-container_top .form-container_top_right select {
+  width: 100%;
+  height: 50%;
+  background-color: rgba(56, 56, 56, 0.5);
+  color: rgba(255, 255, 255, 0.7);
+}
+.section-container-reservations .section-container-reservations_inner .section-container_inner .section-container_inner_bottom form .form-container_top .form-container_top_right option {
+  width: 50%;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
 .section-container-reservations .section-container-reservations_inner .section-container_inner .section-container_inner_bottom form .form-container_mid {
   width: 100%;
   height: 25%;

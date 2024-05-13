@@ -48,7 +48,7 @@
             </button>
           </div>
           <div class="logReg-container">
-            <a href="login.html">Login</a>
+            <a onclick="login();">Login</a>
             <p>/</p>
             <a href="register.html">Registrarse</a>
           </div>
@@ -96,9 +96,22 @@
                     <input type="email" name="your-email" />
                   </div>
                 </div>
-                <div class="form-container_mid">
-                  <p>Asunto</p>
-                  <input type="text" name="your-subject" />
+                <div class="form-container_top">
+                  <div class="form-container_top_left">
+                    <p>Asunto</p>
+                    <input type="text" name="your-subject" />
+                  </div>
+                  <div class="form-container_top_right">
+                    <p>Motivo</p>
+                    <select name="motivo" id="">
+                      <option data-display="Motivo">------</option>
+                      <option value="Reservas">Reservas</option>
+                      <option value="Shows">Shows</option>
+                      <option value="Menú">Menú</option>
+                      <option value="Eventos">Eventos</option>
+                      <option value="Otros">Otros</option>
+                  </select>
+                  </div>
                 </div>
                 <div class="form-container_bottom">
                   <p>Mensaje</p>
@@ -109,38 +122,6 @@
             </div>
           </div>
         </div>
-<<<<<<< HEAD
-      </section>
-      <footer>
-        <div class="footer-container-l">
-          <aside class="footer-container-l_left">
-            <p>Mapa del Sitio</p>
-            <ul>
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="../templates/menu.html">Menu</a></li>
-              <li><a href="../templates/about_us.html">Nosotros</a></li>
-              <li><a href="reservations.html">Reservas</a></li>
-              <li><a href="../templates/register.html">Registro</a></li>
-              <li><a href="../templates/login.html">Login</a></li>
-            </ul>
-          </aside>
-          <aside class="footer-container-l_right">
-            <p class="footer-container-l_right_title">Datos de relevancia:</p>
-            <p>Domicilio: Av. del Libertador 4450</p>
-            <p>Horario: Lun. a Dom. 12:00 a 00:00hs</p>
-            <p>Telefono (wpp): (011)5442-1223</p>
-            <p>Email: andesresto@gmail.com</p>
-          </aside>
-        </div>
-        <div class="footer-container-r">
-          <p>Codo a Codo, 2024, todos los derechos reservados</p>
-        </div>
-      </footer>
-    </div>
-    <script src="../js/main.js"></script>
-  </body>
-</html>
-=======
       </div>
     </section>
 
@@ -174,4 +155,3 @@
 </body>
 
 </html>
->>>>>>> formulario
