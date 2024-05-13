@@ -69,7 +69,7 @@ function enviarFormulario() {
 
 function login() {
     Swal.fire({
-        imageUrl: "../../static/img/banner.png", 
+        imageUrl: "https://juansierra02.github.io/TPO_24146_01/static/img/banner.png", 
         title: 'Iniciar sesión',
         html:
             '<input id="swal-input1" class="swal2-input" placeholder="Usuario">' +
@@ -92,7 +92,7 @@ function login() {
     }).then((result) => {
         if (result.value.success) {
             Swal.fire({
-                imageUrl: "../static/img/banner.png",
+                imageUrl: "https://juansierra02.github.io/TPO_24146_01/static/img/banner.png",
                 title: `¡Hola ${result.value.usuario}!`,
                 //icon: 'success',
                 confirmButtonColor: "#3085d6",
@@ -100,7 +100,7 @@ function login() {
             });
         } else {
             Swal.fire({
-                imageUrl: "../static/img/banner.png",
+                imageUrl: "https://juansierra02.github.io/TPO_24146_01/static/img/banner.png",
                 title: 'Error',
                 //icon: 'error',
                 confirmButtonColor: "#d63030",
