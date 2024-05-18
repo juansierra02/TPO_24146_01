@@ -3,17 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Animate.css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!--hojas de estilo css-->
     <link rel="stylesheet" href="../css/style.css" />
-    <!--scripts-->
+    <!--sweet alert-->
+    <link
+      rel="stylesheet"
+      href="/node_modules/sweetalert2/dist/sweetalert2.min.css"
+    />
+    <script
+      src="../node_modules/sweetalert2/dist/sweetalert2.all.min.js"
+      defer
+    ></script>
+    <!--bootstrap script-->
     <script src="../js/bootstrap.bundle.min.js"></script>
-    <script src="../js/main.js"></script>
+    <!--fontawesome icon script-->
     <script
       src="https://kit.fontawesome.com/82e0355a8f.js"
       crossorigin="anonymous"
     ></script>
     <!-- fonts-->
-    <title>Login</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!--title of tab-->
+    <title>login</title>
   </head>
   <body>
     <div class="general-container">
@@ -21,8 +40,11 @@
         <nav class="navigator-container">
           <ul>
             <li><a href="../index.html">Inicio</a></li>
+            <li>|</li>
             <li><a href="menu.html">Menu</a></li>
+            <li>|</li>
             <li><a href="about_us.html">Nosotros</a></li>
+            <li>|</li>
             <li><a href="reservations.html">Reservas</a></li>
           </ul>
         </nav>
@@ -51,9 +73,11 @@
               </button>
             </div>
             <div class="logReg-container">
-              <a href="login.html">Login</a>
-              <p>/</p>
-              <a href="register.html">Registrarse</a>
+              <a class="logReg-container_login" onclick="login();">Login /</a>
+              <!-- <a href="templates/login.html" onclick="login();">Login</a> -->
+              <a class="logReg-container_register" href="register.html"
+                >Registrarse</a
+              >
             </div>
           </div>
         </div>

@@ -5,11 +5,13 @@ header {
   height: 50px;
   justify-content: center;
   .navigator-container {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
     position: fixed;
     display: flex;
     width: fit-content;
     height: fit-content;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     justify-content: center;
     align-items: center;
     padding: 15px 25px 10px 25px;
@@ -23,15 +25,23 @@ header {
       li {
         text-decoration: none;
         list-style: none;
-        padding: 0 10px 0 10px;
+        padding: 0 5px 0 5px;
+        color: rgba(255, 255, 255, 0.7);
+        user-select: none;
+        position: relative;
+        transition: all ease-in-out 0.3s;
         a {
           text-decoration: none;
           color: rgba(255, 255, 255, 0.7);
+          transition: all ease-in-out 0.2s;
         }
         a:hover {
           color: rgba(255, 255, 255, 1);
-          transition: 0.4s ease-in-out;
+          font-weight: 400;
         }
+      }
+      li:hover {
+        transform: translateY(-2px);
       }
     }
   }
@@ -42,6 +52,7 @@ header {
     .others-container-left {
       display: flex;
       width: 70%;
+      font-family: "Montserrat", sans-serif;
       .language-container_text {
         display: flex;
         align-items: center;
@@ -69,20 +80,37 @@ header {
       justify-content: space-between;
       .logReg-container {
         display: flex;
+        align-items: center;
         height: fit-content;
-        p {
-          color: rgba(255, 255, 255, 0.8);
-          padding: 0 5px 0 5px;
-          line-height: normal;
-          height: fit-content;
-          margin-bottom: 0;
-          user-select: none;
-        }
-        a {
+        font-family: "Montserrat", sans-serif;
+        .logReg-container_login {
+          font-size: 0.9rem;
+          color: rgba(255, 255, 255, 0.6);
           cursor: pointer;
           text-decoration: none;
-          color: rgba(255, 255, 255, 0.8);
           line-height: normal;
+          transition: all ease-in-out 0.4s;
+          padding: 0 5px 0 0;
+        }
+        .logReg-container_login:hover {
+          color: white;
+        }
+        .logReg-container_register {
+          font-size: 0.95rem;
+          color: rgba(255, 255, 255, 0.8);
+          cursor: pointer;
+          text-decoration: none;
+          line-height: normal;
+          transition: all ease-in-out 0.4s;
+          border-bottom-style: none;
+          border-bottom-width: 0;
+          border-bottom-color: transparent;
+        }
+        .logReg-container_register:hover {
+          color: white;
+          border-bottom-style: solid;
+          border-bottom-width: 1px;
+          border-bottom-color: white;
         }
       }
     }

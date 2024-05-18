@@ -4,27 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Animate.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!--hojas de estilo css-->
     <link rel="stylesheet" href="css/style.css" />
+    <!--sweet alert-->
     <link rel="stylesheet" href="js/sweetalert2/sweetalert2.min.css" />
-    <!--scripts-->
-    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/sweetalert2/sweetalert2.all.min.js" defer></script>
-    <script src="https://kit.fontawesome.com/82e0355a8f.js" crossorigin="anonymous" ></script>
+    <!--bootstrap script-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--fontawesome icon script-->
+    <script
+      src="https://kit.fontawesome.com/82e0355a8f.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!--title of tab-->
     <title>Home</title>
   </head>
+
+  <!--MAIN BODY-->
   <body>
     <!-- <button id="openModalBtn">Abrir Modal</button> -->
-
     <div class="general-container">
       <header>
         <nav class="navigator-container">
           <ul>
             <li><a href="index.html">Inicio</a></li>
+            <li>|</li>
             <li><a href="templates/menu.html">Menu</a></li>
+            <li>|</li>
             <li><a href="templates/about_us.html">Nosotros</a></li>
+            <li>|</li>
             <li><a href="templates/reservations.html">Reservas</a></li>
           </ul>
         </nav>
@@ -53,10 +70,13 @@
               </button>
             </div>
             <div class="logReg-container">
-              <a onclick="login();">Login</a>
+              <a class="logReg-container_login" onclick="login();">Login /</a>
               <!-- <a href="templates/login.html" onclick="login();">Login</a> -->
-              <p>/</p>
-              <a href="templates/register.html">Registrarse</a>
+              <a
+                class="logReg-container_register"
+                href="templates/register.html"
+                >Registrarse</a
+              >
             </div>
           </div>
         </div>
@@ -67,7 +87,7 @@
           <div class="section-container-middle">
             <img
               class="animate__animated animate__fadeIn"
-              src="./static/img/andinaw.png"
+              src="./static/img/logo2w.png"
               alt="logo"
             />
           </div>
@@ -75,28 +95,28 @@
             <div
               class="section-container-right_up animate__animated animate__slideInRight"
             >
-              <img src="./static/img/michelinw.png" alt="michelinstar" />
-              <div class="section-container-right_up_text">
-                <p>2024</p>
-                <p>Michelin Star</p>
+              <img src="./static/img/michelinred.png" alt="michelinstar" />
+              <div class="section-container-right_text">
+                <p class="awards-year">2024</p>
+                <p>" Michelin Star "</p>
               </div>
             </div>
             <div
               class="section-container-right_mid animate__animated animate__slideInRight"
             >
-              <img src="./static/img/zagatw.png" alt="zagatguideprice" />
-              <div class="section-container-right_mid_text">
-                <p>2022/24</p>
-                <p>Incluido en guia La Zagat</p>
+              <img src="./static/img/repsolorange.png" alt="solesrepsol" />
+              <div class="section-container-right_text">
+                <p class="awards-year">2022/23/24</p>
+                <p>" Soles Repsol guide included "</p>
               </div>
             </div>
             <div
               class="section-container-right_bottom animate__animated animate__slideInRight"
             >
-              <img src="./static/img/repsolw.png" alt="solesrepsol" />
-              <div class="section-container-right_bottom_text">
-                <p>Soles Guia Repsol</p>
-                <p>2021</p>
+              <img src="./static/img/zagatred.png" alt="zagatguideprice" />
+              <div class="section-container-right_text">
+                <p class="awards-year">2021/22</p>
+                <p>"La Zagat guide included "</p>
               </div>
             </div>
           </div>
@@ -111,8 +131,11 @@
               <li><a href="templates/menu.html">Menu</a></li>
               <li><a href="templates/about_us.html">Nosotros</a></li>
               <li><a href="templates/reservations.html">Reservas</a></li>
-              <li><a href="templates/register.html">Registro</a></li>
-              <li><a href="templates/login.html">Login</a></li>
+              <li>
+                <a href="templates/register.html">Registro</a>
+                <p>/</p>
+                <a href="templates/login.html">Login</a>
+              </li>
             </ul>
           </aside>
           <aside class="footer-container-l_right">

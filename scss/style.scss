@@ -25,6 +25,9 @@
   --animate-duration: 3s;
   --animate-delay: 0s;
 }
+.animate__animated.animate__zoomIn {
+  --animate-duration: 1s;
+}
 
 //general index//
 body {
@@ -45,4 +48,8 @@ body {
       padding-bottom: 80px;
     }
   }
+}
+
+p {
+  margin: 0;
 }
