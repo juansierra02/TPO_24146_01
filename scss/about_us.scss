@@ -1,0 +1,14 @@
+.section-container{
+    background-color: rgba(0, 0, 0, 0.349);
+    .section-container_inner{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        
+        p {
+            color: white;
+            width: 60%;
+            
+        }
+    }
+}

@@ -1,3 +1,14 @@
-
+.section-container {
+  background-color: rgba(0, 0, 0, 0.349);
+}
+.section-container .section-container_inner {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.section-container .section-container_inner p {
+  color: white;
+  width: 60%;
+}
 
 /*# sourceMappingURL=about_us.css.map */
