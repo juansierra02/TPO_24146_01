@@ -6,6 +6,7 @@ header {
   justify-content: center;
 }
 header .navigator-container {
+  z-index: 99 !important;
   font-family: "Montserrat", sans-serif;
   font-size: 0.9rem;
   position: fixed;
@@ -115,6 +116,12 @@ header .others-container .others-container-right .logReg-container .logReg-conta
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-bottom-color: white;
+}
+
+@media screen and (max-width: 1280px) {
+  header .others-container .others-container-right {
+    justify-content: end;
+  }
 }
 
 /*# sourceMappingURL=header.css.map */
