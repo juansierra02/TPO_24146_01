@@ -1,14 +1,27 @@
 .section-container{
-    background-color: rgba(0, 0, 0, 0.349);
+    width: 40%;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.65);
     .section-container_inner{
-        align-items: center;
+        img {
+            align-items: center;
+        }
+        
         display: flex;
         flex-direction: column;
+    }
+        
         
         p {
             color: white;
-            width: 60%;
-            
+            width: 100%;
+            padding: 10px;
+            align-items: center;
         }
+       iframe {
+        padding: 10px;
+        width: 100%;   
     }
-}
+    
+    }
+

@@ -12,5 +12,13 @@
     "bootstrap": "^5.3.3",
     "sweetalert2": "^11.10.8"
   },
-  "keywords": []
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juansierra02/TPO_24146_01.git"
+  },
+  "bugs": {
+    "url": "https://github.com/juansierra02/TPO_24146_01/issues"
+  },
+  "homepage": "https://github.com/juansierra02/TPO_24146_01#readme"
 }

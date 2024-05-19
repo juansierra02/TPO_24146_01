@@ -12014,16 +12014,26 @@ header .others-container .others-container-right .logReg-container a {
 }
 
 .section-container {
-  background-color: rgba(0, 0, 0, 0.349);
+  width: 40%;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.65);
 }
 .section-container .section-container_inner {
-  align-items: center;
   display: flex;
   flex-direction: column;
 }
-.section-container .section-container_inner p {
+.section-container .section-container_inner img {
+  align-items: center;
+}
+.section-container p {
   color: white;
-  width: 60%;
+  width: 100%;
+  padding: 10px;
+  align-items: center;
+}
+.section-container iframe {
+  padding: 10px;
+  width: 100%;
 }
 
 .section-container-reservations {
