@@ -113,16 +113,77 @@ header {
           border-bottom-width: 1px;
           border-bottom-color: white;
         }
+        .logReg-container_icons {
+          display: none;
+        }
       }
     }
   }
 }
 
+//responsive at max 1280px//
 @media screen and (max-width: 1280px) {
   header {
     .others-container {
       .others-container-right {
         justify-content: end;
+      }
+    }
+  }
+}
+
+//responsive at max 768px//
+@media screen and (max-width: 768px) {
+  header {
+    padding: 0 10px 0 10px;
+    .navigator-container {
+      background-color: rgba(0, 0, 0, 0.8);
+      font-size: 0.8rem;
+      padding: 15px 10px 10px 10px;
+    }
+    .others-container {
+      .others-container-left {
+        .language-container_text {
+          span {
+            display: none !important;
+          }
+        }
+        .language-container_image {
+          width: fit-content;
+          background-color: rgba(0, 0, 0, 0.8);
+          padding: 0 10px 5px 10px;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+        }
+      }
+      .others-container-right {
+        .logReg-container {
+          background-color: rgba(0, 0, 0, 0.8);
+          padding: 0 5px 5px 5px;
+          border-bottom-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+          .logReg-container_login {
+            display: none;
+          }
+          .logReg-container_register {
+            display: none;
+          }
+          .logReg-container_icons {
+            display: flex;
+            color: rgba(255, 255, 255, 0.6);
+            width: 30px;
+            height: 30px;
+            text-decoration: none;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+          }
+          .logReg-container_icons:hover {
+            color: white;
+            scale: 1.2;
+            transition: all ease-in-out 0.2s;
+          }
+        }
       }
     }
   }

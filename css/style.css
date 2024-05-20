@@ -11846,6 +11846,7 @@ textarea.form-control-lg {
 }
 footer {
   position: absolute;
+  bottom: 0;
   width: 100%;
   height: 120px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -11938,6 +11939,7 @@ footer .footer-container-r p {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    bottom: auto;
   }
   footer .footer-container-l {
     width: 100%;
@@ -11988,6 +11990,46 @@ footer .footer-container-r p {
   }
   footer .footer-container-r p {
     padding: 0 10px 0 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+  }
+  footer .footer-container-l {
+    flex-direction: column;
+    padding-top: 10px;
+  }
+  footer .footer-container-l .footer-container-l_left {
+    width: 100%;
+    margin: 0 0 0 0;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .footer-container-l .footer-container-l_left ul {
+    align-items: center;
+  }
+  footer .footer-container-l .footer-container-l_mid {
+    width: 100%;
+  }
+  footer .footer-container-l .footer-container-l_mid .footer-container-l_mid_socials {
+    margin: 20px 10px 0 10px;
+  }
+  footer .footer-container-l .footer-container-l_right {
+    width: 100%;
+    margin: 20px 0 0 0;
+    padding-bottom: 20px;
+    align-items: center;
+  }
+  footer .footer-container-r {
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+  }
+  footer .footer-container-r p {
+    padding: 5px 0 5px 0;
+    margin: 0;
   }
 }
 header {
@@ -12109,10 +12151,60 @@ header .others-container .others-container-right .logReg-container .logReg-conta
   border-bottom-width: 1px;
   border-bottom-color: white;
 }
+header .others-container .others-container-right .logReg-container .logReg-container_icons {
+  display: none;
+}
 
 @media screen and (max-width: 1280px) {
   header .others-container .others-container-right {
     justify-content: end;
+  }
+}
+@media screen and (max-width: 768px) {
+  header {
+    padding: 0 10px 0 10px;
+  }
+  header .navigator-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 0.8rem;
+    padding: 15px 10px 10px 10px;
+  }
+  header .others-container .others-container-left .language-container_text span {
+    display: none !important;
+  }
+  header .others-container .others-container-left .language-container_image {
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0 10px 5px 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  header .others-container .others-container-right .logReg-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0 5px 5px 5px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  header .others-container .others-container-right .logReg-container .logReg-container_login {
+    display: none;
+  }
+  header .others-container .others-container-right .logReg-container .logReg-container_register {
+    display: none;
+  }
+  header .others-container .others-container-right .logReg-container .logReg-container_icons {
+    display: flex;
+    color: rgba(255, 255, 255, 0.6);
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  header .others-container .others-container-right .logReg-container .logReg-container_icons:hover {
+    color: white;
+    scale: 1.2;
+    transition: all ease-in-out 0.2s;
   }
 }
 .reservations-container {
@@ -12355,13 +12447,13 @@ header .others-container .others-container-right .logReg-container .logReg-conta
   display: flex;
   flex-direction: column;
   width: 660px;
-  height: 100%;
+  height: 700px;
   align-items: center;
   margin-top: 150px;
 }
 .section-container-index .section-container-middle .section-container-middle_logo {
-  width: 80%;
-  height: auto;
+  width: auto;
+  height: 400px;
   opacity: 0.9 !important;
 }
 .section-container-index .section-container-middle .section-container-middle_bottom {
@@ -12374,13 +12466,14 @@ header .others-container .others-container-right .logReg-container .logReg-conta
 .section-container-index .section-container-middle .section-container-middle_bottom .section-container-middle_text {
   -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(2px 2px 1px #161616);
-  width: 100%;
+  width: 408px;
+  height: auto;
 }
 .section-container-index .section-container-right {
   display: flex;
   flex-direction: column;
   width: 630px;
-  height: 100%;
+  height: 80%;
   justify-content: end;
   align-items: end;
   overflow: hidden;
@@ -12390,7 +12483,6 @@ header .others-container .others-container-right .logReg-container .logReg-conta
   height: 80px;
   width: 80%;
   align-items: center;
-  margin-top: 150px;
   padding: 5px 0 5px 15px;
   background-color: rgba(0, 0, 0, 0.582);
   border-top-left-radius: 50px;
@@ -12521,6 +12613,91 @@ header .others-container .others-container-right .logReg-container .logReg-conta
     border-radius: 50px;
   }
 }
+@media screen and (max-width: 768px) {
+  .section-container-index .section-container-middle {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .section-container-index .section-container-middle .section-container-middle_logo {
+    width: 200px;
+    height: auto;
+  }
+  .section-container-index .section-container-middle .section-container-middle_bottom {
+    width: 400px;
+  }
+  .section-container-index .section-container-middle .section-container-middle_bottom .section-container-middle_text {
+    width: 100%;
+  }
+  .section-container-index .section-container-right {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .section-container-index .section-container-right .section-container-right_up {
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .section-container-index .section-container-right .section-container-right_up img {
+    width: 50px;
+    height: auto;
+  }
+  .section-container-index .section-container-right .section-container-right_up .section-container-right_text {
+    margin: 5px 0 0 0;
+    align-items: center;
+  }
+  .section-container-index .section-container-right .section-container-right_up .section-container-right_text .awards-year {
+    font-size: 0.8rem;
+  }
+  .section-container-index .section-container-right .section-container-right_mid {
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .section-container-index .section-container-right .section-container-right_mid img {
+    width: 50px;
+    height: auto;
+  }
+  .section-container-index .section-container-right .section-container-right_mid .section-container-right_text {
+    margin: 5px 0 0 0;
+    align-items: center;
+  }
+  .section-container-index .section-container-right .section-container-right_mid .section-container-right_text .awards-year {
+    font-size: 0.8rem;
+  }
+  .section-container-index .section-container-right .section-container-right_bottom {
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .section-container-index .section-container-right .section-container-right_bottom img {
+    width: 50px;
+    height: auto;
+  }
+  .section-container-index .section-container-right .section-container-right_bottom .section-container-right_text {
+    margin: 5px 0 0 0;
+    align-items: center;
+  }
+  .section-container-index .section-container-right .section-container-right_bottom .section-container-right_text .awards-year {
+    font-size: 0.8rem;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -12558,6 +12735,15 @@ body .general-container section {
 
 p {
   margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url("../static/img/longwp.png");
+    background-repeat: no-repeat;
+    background-size: 200% auto;
+    background-position: top center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
