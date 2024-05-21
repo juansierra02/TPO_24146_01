@@ -1,142 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--favicon-->
-    <link rel="icon" type="image/jpg" href="../static/img/favicon.ico" />
-    <!--Animate.css-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <!--hojas de estilo css-->
-    <link rel="stylesheet" href="../css/style.css" />
-    <!--sweet alert-->
-    <link
-      rel="stylesheet"
-      href="/node_modules/sweetalert2/dist/sweetalert2.min.css"
-    />
-    <script
-      src="../node_modules/sweetalert2/dist/sweetalert2.all.min.js"
-      defer
-    ></script>
-    <!--bootstrap script-->
-    <script src="../js/bootstrap.bundle.min.js"></script>
-    <!--fontawesome icon script-->
-    <script
-      src="https://kit.fontawesome.com/82e0355a8f.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- fonts-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <!--title of tab-->
-    <title>Our Menu</title>
-  </head>
-  <body>
-    <div class="general-container">
-      <header>
-        <nav class="navigator-container">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--favicon-->
+  <link rel="icon" type="image/jpg" href="../static/img/favicon.ico" />
+  <!--Animate.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!--hojas de estilo css-->
+  <link rel="stylesheet" href="../css/style.css" />
+  <!--sweet alert-->
+  <link rel="stylesheet" href="../js/sweetalert2/sweetalert2.min.css" />
+  <script src="../js/sweetalert2/sweetalert2.all.min.js" defer></script>
+  <!--bootstrap script-->
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <!--fontawesome icon script-->
+  <script src="https://kit.fontawesome.com/82e0355a8f.js" crossorigin="anonymous"></script>
+  <!-- fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+  <!--title of tab-->
+  <title>Our Menu</title>
+</head>
+
+<body>
+  <div class="general-container">
+    <header>
+      <nav class="navigator-container">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li>|</li>
+          <li><a href="menu.html">Menu</a></li>
+          <li>|</li>
+          <li><a href="about_us.html">Nosotros</a></li>
+          <li>|</li>
+          <li><a href="reservations.html">Reservas</a></li>
+        </ul>
+      </nav>
+      <div class="others-container">
+        <div class="others-container-left">
+          <div class="language-container_text">
+            <span>Idioma /</span>
+          </div>
+          <div class="language-container_image">
+            <img src="../static/img/spaflag.svg" alt="language-flag" />
+          </div>
+        </div>
+        <div class="others-container-right">
+          <div class="socials-container">
+            <button class="socials-container-button">
+              <a href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook fa-xl"></i></a>
+              <div class="text">Facebook</div>
+            </button>
+            <button class="socials-container-button">
+              <a href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
+              <div class="text">Instagram</div>
+            </button>
+          </div>
+          <div class="logReg-container">
+            <a class="logReg-container_login" onclick="login();">Login /</a>
+            <!-- <a href="templates/login.html" onclick="login();">Login</a> -->
+            <a class="logReg-container_icons" onclick="login();"><i class="fa-regular fa-user"></i></a>
+            <a class="logReg-container_register" href="register.html">Registrarse</a>
+            <a class="logReg-container_icons" href="register.html"><i class="fa-solid fa-user-plus"></i></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="section-container">
+        <div class="section-container_inner">
+          <div>ACA IRA EL MENU</div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-container-l">
+        <aside class="footer-container-l_left">
+          <p>Mapa del Sitio</p>
           <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li>|</li>
+            <li><a href="../index.html">Home</a></li>
             <li><a href="menu.html">Menu</a></li>
-            <li>|</li>
             <li><a href="about_us.html">Nosotros</a></li>
-            <li>|</li>
             <li><a href="reservations.html">Reservas</a></li>
+            <li>
+              <a href="register.html">Registro</a>
+              <p>/</p>
+              <a href="login.html">Login</a>
+            </li>
           </ul>
-        </nav>
-        <div class="others-container">
-          <div class="others-container-left">
-            <div class="language-container_text">
-              <span>Idioma /</span>
-            </div>
-            <div class="language-container_image">
-              <img src="../static/img/spaflag.svg" alt="language-flag" />
-            </div>
+        </aside>
+        <aside class="footer-container-l_mid">
+          <div class="footer-container-l_mid_socials">
+            <a href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook fa-xl"></i></a>
           </div>
-          <div class="others-container-right">
-            <div class="socials-container">
-              <button class="socials-container-button">
-                <a href="http://www.facebook.com" target="_blank"
-                  ><i class="fa-brands fa-square-facebook fa-xl"></i
-                ></a>
-                <div class="text">Facebook</div>
-              </button>
-              <button class="socials-container-button">
-                <a href="http://www.instagram.com" target="_blank"
-                  ><i class="fa-brands fa-instagram fa-xl"></i
-                ></a>
-                <div class="text">Instagram</div>
-              </button>
-            </div>
-            <div class="logReg-container">
-              <a class="logReg-container_login" onclick="login();">Login /</a>
-              <!-- <a href="templates/login.html" onclick="login();">Login</a> -->
-              <a class="logReg-container_icons" onclick="login();"
-                ><i class="fa-regular fa-user"></i
-              ></a>
-              <a class="logReg-container_register" href="register.html"
-                >Registrarse</a
-              >
-              <a class="logReg-container_icons" href="register.html"
-                ><i class="fa-solid fa-user-plus"></i
-              ></a>
-            </div>
+          <div class="footer-container-l_mid_socials">
+            <a href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
           </div>
-        </div>
-      </header>
-      <section>
-        <div class="section-container">
-          <div class="section-container_inner">
-            <div>ACA IRA EL MENU</div>
-          </div>
-        </div>
-      </section>
-      <footer>
-        <div class="footer-container-l">
-          <aside class="footer-container-l_left">
-            <p>Mapa del Sitio</p>
-            <ul>
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="menu.html">Menu</a></li>
-              <li><a href="about_us.html">Nosotros</a></li>
-              <li><a href="reservations.html">Reservas</a></li>
-              <li>
-                <a href="register.html">Registro</a>
-                <p>/</p>
-                <a href="login.html">Login</a>
-              </li>
-            </ul>
-          </aside>
-          <aside class="footer-container-l_mid">
-            <div class="footer-container-l_mid_socials">
-              <a href="http://www.facebook.com" target="_blank"
-                ><i class="fa-brands fa-square-facebook fa-xl"></i
-              ></a>
-            </div>
-            <div class="footer-container-l_mid_socials">
-              <a href="http://www.instagram.com" target="_blank"
-                ><i class="fa-brands fa-instagram fa-xl"></i
-              ></a>
-            </div>
-          </aside>
-          <aside class="footer-container-l_right">
-            <p class="footer-container-l_right_title">Datos de relevancia:</p>
-            <p>Domicilio: Av. del Libertador 4450</p>
-            <p>Horario: Lun. a Dom. 12:00 a 00:00hs</p>
-            <p>Telefono (wpp): (011)5442-1223</p>
-            <p>Email: andesresto@gmail.com</p>
-          </aside>
-        </div>
-        <div class="footer-container-r">
-          <p>Codo a Codo, 2024, todos los derechos reservados</p>
-        </div>
-      </footer>
-    </div>
-  </body>
+        </aside>
+        <aside class="footer-container-l_right">
+          <p class="footer-container-l_right_title">Datos de relevancia:</p>
+          <p>Domicilio: Av. del Libertador 4450</p>
+          <p>Horario: Lun. a Dom. 12:00 a 00:00hs</p>
+          <p>Telefono (wpp): (011)5442-1223</p>
+          <p>Email: andesresto@gmail.com</p>
+        </aside>
+      </div>
+      <div class="footer-container-r">
+        <p>Codo a Codo, 2024, todos los derechos reservados</p>
+      </div>
+    </footer>
+  </div>
+  <script src="../js/main.js"></script>
+</body>
+
 </html>
