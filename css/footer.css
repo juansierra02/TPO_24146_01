@@ -93,7 +93,6 @@ footer .footer-container-r p {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    bottom: auto;
   }
   footer .footer-container-l {
     width: 100%;

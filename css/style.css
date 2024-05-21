@@ -11939,7 +11939,6 @@ footer .footer-container-r p {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    bottom: auto;
   }
   footer .footer-container-l {
     width: 100%;
@@ -12081,6 +12080,9 @@ header .navigator-container ul li a:hover {
 header .navigator-container ul li:hover {
   transform: translateY(-2px);
 }
+header .navigator-container ul .cell-icon {
+  display: none;
+}
 header .others-container {
   display: flex;
   width: 100%;
@@ -12205,6 +12207,35 @@ header .others-container .others-container-right .logReg-container .logReg-conta
     color: white;
     scale: 1.2;
     transition: all ease-in-out 0.2s;
+  }
+}
+@media screen and (max-width: 480px) {
+  header {
+    padding: 0 0 0 0;
+  }
+  header .navigator-container {
+    padding: 15px 10px 10px 10px;
+    width: 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    font-weight: 500;
+  }
+  header .navigator-container ul {
+    width: 100%;
+    justify-content: center;
+  }
+  header .navigator-container ul li {
+    padding: 0 3px 0 3px;
+  }
+  header .navigator-container ul li a:hover {
+    font-weight: 600;
+  }
+  header .navigator-container ul .cell-icon {
+    display: flex;
+    padding: 0 3px 0 5px;
+  }
+  header .others-container {
+    display: none;
   }
 }
 .reservations-container {
@@ -12575,7 +12606,8 @@ header .others-container .others-container-right .logReg-container .logReg-conta
     margin-top: 20px;
   }
   .section-container-index .section-container-middle .section-container-middle_logo {
-    width: 400px;
+    width: 30%;
+    height: auto;
   }
   .section-container-index .section-container-middle .section-container-middle_bottom {
     width: 400px;
@@ -12698,6 +12730,91 @@ header .others-container .others-container-right .logReg-container .logReg-conta
     font-size: 0.8rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .section-container-index .section-container-middle {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .section-container-index .section-container-middle .section-container-middle_logo {
+    width: 150px;
+    height: auto;
+  }
+  .section-container-index .section-container-middle .section-container-middle_bottom {
+    width: 90%;
+  }
+  .section-container-index .section-container-middle .section-container-middle_bottom .section-container-middle_text {
+    width: 100%;
+  }
+  .section-container-index .section-container-right {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .section-container-index .section-container-right .section-container-right_up {
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .section-container-index .section-container-right .section-container-right_up img {
+    width: 50px;
+    height: auto;
+  }
+  .section-container-index .section-container-right .section-container-right_up .section-container-right_text {
+    margin: 5px 0 0 0;
+    align-items: center;
+  }
+  .section-container-index .section-container-right .section-container-right_up .section-container-right_text .awards-year {
+    font-size: 0.8rem;
+  }
+  .section-container-index .section-container-right .section-container-right_mid {
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .section-container-index .section-container-right .section-container-right_mid img {
+    width: 50px;
+    height: auto;
+  }
+  .section-container-index .section-container-right .section-container-right_mid .section-container-right_text {
+    margin: 5px 0 0 0;
+    align-items: center;
+  }
+  .section-container-index .section-container-right .section-container-right_mid .section-container-right_text .awards-year {
+    font-size: 0.8rem;
+  }
+  .section-container-index .section-container-right .section-container-right_bottom {
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .section-container-index .section-container-right .section-container-right_bottom img {
+    width: 50px;
+    height: auto;
+  }
+  .section-container-index .section-container-right .section-container-right_bottom .section-container-right_text {
+    margin: 5px 0 0 0;
+    align-items: center;
+  }
+  .section-container-index .section-container-right .section-container-right_bottom .section-container-right_text .awards-year {
+    font-size: 0.8rem;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -12740,7 +12857,7 @@ p {
 @media screen and (max-width: 768px) {
   body {
     background-image: url("../static/img/longwp.png");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: 200% auto;
     background-position: top center;
   }
