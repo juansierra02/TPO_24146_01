@@ -7,7 +7,6 @@ footer {
   display: flex;
   justify-content: space-around;
   overflow: hidden;
-  margin-top: 150px;
 }
 footer .footer-container-l {
   display: flex;

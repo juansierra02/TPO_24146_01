@@ -8,6 +8,7 @@
   justify-content: center;
   height: fit-content;
   width: 100%;
+  padding-bottom: 150px;
 }
 .reservations-container .section-container-reservations .section-container-reservations_inner {
   background-color: rgba(0, 0, 0, 0.9);
@@ -154,6 +155,166 @@
   width: auto;
   padding: 10px 20px;
   margin: 10px 0 15px 0;
+}
+
+@media screen and (max-width: 1280px) {
+  .reservations-container {
+    display: flex;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0) 100%);
+  }
+  .reservations-container .section-container-reservations {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: 100%;
+  }
+  .reservations-container .section-container-reservations .section-container-reservations_inner {
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+    height: fit-content;
+    margin: 40px 0 0 0;
+  }
+  .reservations-container .section-container-reservations .section-container-reservations_inner .section-container-reservations-banner {
+    width: 97%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 0 0;
+    object-fit: cover;
+  }
+  .reservations-container .section-container-reservations .section-container-reservations_inner .section-container-reservations-banner img {
+    width: 100%;
+    height: auto;
+  }
+  .reservations-container .section-container-reservations .section-container-reservations_inner .section-container_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 10px 0 0 0;
+  }
+  .reservations-container .section-container-reservations .section-container-reservations_inner .section-container_inner .section-container_inner_top {
+    width: 97%;
+    height: 40%;
+    font-size: 0.9rem;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+  }
+  .reservations-container .section-container-reservations .section-container-reservations_inner .section-container_inner .section-container_inner_top h6 {
+    width: fit-content;
+    padding-bottom: 5px;
+    margin: 0;
+  }
+  .reservations-container .section-container-reservations .section-container-reservations_inner .section-container_inner .section-container_inner_top p {
+    height: fit-content;
+    margin: 0;
+    padding: 3px 0 3px 0;
+  }
+  .reservations-container .section-container-reservations .section-container-reservations_inner .section-container_inner .section-container_inner_top .section-container_inner_top_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 1px;
+    border-color: transparent;
+    border-bottom-color: rgba(255, 255, 255, 0.3);
+    border-style: solid;
+    margin-bottom: 5px;
+    padding-bottom: 3px;
+    border-width: 1px;
+  }
+  .reservations-container .section-container-reservations .section-container-reservations_inner .section-container_inner .section-container_inner_top .section-container_inner_top_main p {
+    margin: 0;
+    padding: 0;
+  }
+  .reservations-container .section-container-reservations .section-container-reservations_inner .section-container_inner .section-container_inner_bottom {
+    width: 97%;
+    height: 40%;
+    padding: 0 20px 0px 20px;
+  }
+  .reservations-container .section-container-reservations .section-container-reservations_inner .section-container_inner .section-container_inner_bottom p {
+    padding: 0;
+    margin: 5px 0 2px 0;
+  }
+  .reservations-container .section-container-reservations .section-container-reservations_inner .section-container_inner .section-container_inner_bottom form {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .reservations-container .section-container-reservations .section-container-reservations_inner .section-container_inner .section-container_inner_bottom form input {
+    background-color: rgba(56, 56, 56, 0.5);
+    border-style: none;
+    outline: none;
+    border: 1px solid transparent;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 3px 0 3px 5px;
+  }
+  .reservations-container .section-container-reservations .section-container-reservations_inner .section-container_inner .section-container_inner_bottom form input:focus {
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+  .reservations-container .section-container-reservations .section-container-reservations_inner .section-container_inner .section-container_inner_bottom form .form-container_top {
+    display: flex;
+    height: 25%;
+  }
+  .reservations-container .section-container-reservations .section-container-reservations_inner .section-container_inner .section-container_inner_bottom form .form-container_top .form-container_top_left {
+    width: 50%;
+  }
+  .reservations-container .section-container-reservations .section-container-reservations_inner .section-container_inner .section-container_inner_bottom form .form-container_top .form-container_top_left input {
+    width: 90%;
+  }
+  .reservations-container .section-container-reservations .section-container-reservations_inner .section-container_inner .section-container_inner_bottom form .form-container_top .form-container_top_right {
+    width: 50%;
+  }
+  .reservations-container .section-container-reservations .section-container-reservations_inner .section-container_inner .section-container_inner_bottom form .form-container_top .form-container_top_right input {
+    width: 100%;
+  }
+  .reservations-container .section-container-reservations .section-container-reservations_inner .section-container_inner .section-container_inner_bottom form .form-container_top .form-container_top_right select {
+    width: 100%;
+    height: 50%;
+    background-color: rgba(56, 56, 56, 0.5);
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .reservations-container .section-container-reservations .section-container-reservations_inner .section-container_inner .section-container_inner_bottom form .form-container_top .form-container_top_right option {
+    width: 50%;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  .reservations-container .section-container-reservations .section-container-reservations_inner .section-container_inner .section-container_inner_bottom form .form-container_mid {
+    width: 100%;
+    height: 25%;
+  }
+  .reservations-container .section-container-reservations .section-container-reservations_inner .section-container_inner .section-container_inner_bottom form .form-container_mid input {
+    width: 100%;
+  }
+  .reservations-container .section-container-reservations .section-container-reservations_inner .section-container_inner .section-container_inner_bottom form .form-container_bottom {
+    width: 100%;
+    height: 50%;
+  }
+  .reservations-container .section-container-reservations .section-container-reservations_inner .section-container_inner .section-container_inner_bottom form .form-container_bottom textarea {
+    width: 100%;
+    max-height: 130px;
+    background-color: rgba(56, 56, 56, 0.5);
+    border-style: none;
+    outline: none;
+    border: 1px solid transparent;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 3px 0 3px 5px;
+  }
+  .reservations-container .section-container-reservations .section-container-reservations_inner .section-container_inner .section-container_inner_bottom form .form-container_bottom textarea:focus {
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+  .reservations-container .section-container-reservations .section-container-reservations_inner .section-container_inner .section-container_inner_bottom form input[type=submit] {
+    width: auto;
+    padding: 10px 20px;
+    margin: 10px 0 15px 0;
+  }
 }
 
 /*# sourceMappingURL=reservations.css.map */
