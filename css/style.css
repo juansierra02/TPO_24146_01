@@ -11853,6 +11853,7 @@ footer {
   display: flex;
   justify-content: space-around;
   overflow: hidden;
+  margin-top: 150px;
 }
 footer .footer-container-l {
   display: flex;
@@ -11934,7 +11935,6 @@ footer .footer-container-r p {
 
 @media screen and (max-width: 1280px) {
   footer {
-    position: absolute;
     height: fit-content;
     justify-content: space-around;
     align-items: center;
@@ -12593,6 +12593,7 @@ header .others-container .others-container-right .logReg-container .logReg-conta
   .section-container-index {
     flex-direction: column;
     height: fit-content;
+    margin-bottom: 200px;
   }
   .section-container-index .section-container-left {
     display: none;
@@ -12646,6 +12647,9 @@ header .others-container .others-container-right .logReg-container .logReg-conta
   }
 }
 @media screen and (max-width: 768px) {
+  .section-container-index {
+    margin-bottom: 400px;
+  }
   .section-container-index .section-container-middle {
     display: flex;
     flex-direction: column;
@@ -12663,71 +12667,6 @@ header .others-container .others-container-right .logReg-container .logReg-conta
   }
   .section-container-index .section-container-middle .section-container-middle_bottom .section-container-middle_text {
     width: 100%;
-  }
-  .section-container-index .section-container-right {
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-  }
-  .section-container-index .section-container-right .section-container-right_up {
-    flex-direction: column;
-    height: fit-content;
-    width: fit-content;
-    justify-content: center;
-    border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  .section-container-index .section-container-right .section-container-right_up img {
-    width: 50px;
-    height: auto;
-  }
-  .section-container-index .section-container-right .section-container-right_up .section-container-right_text {
-    margin: 5px 0 0 0;
-    align-items: center;
-  }
-  .section-container-index .section-container-right .section-container-right_up .section-container-right_text .awards-year {
-    font-size: 0.8rem;
-  }
-  .section-container-index .section-container-right .section-container-right_mid {
-    flex-direction: column;
-    height: fit-content;
-    width: fit-content;
-    justify-content: center;
-    border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  .section-container-index .section-container-right .section-container-right_mid img {
-    width: 50px;
-    height: auto;
-  }
-  .section-container-index .section-container-right .section-container-right_mid .section-container-right_text {
-    margin: 5px 0 0 0;
-    align-items: center;
-  }
-  .section-container-index .section-container-right .section-container-right_mid .section-container-right_text .awards-year {
-    font-size: 0.8rem;
-  }
-  .section-container-index .section-container-right .section-container-right_bottom {
-    flex-direction: column;
-    height: fit-content;
-    width: fit-content;
-    justify-content: center;
-    border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  .section-container-index .section-container-right .section-container-right_bottom img {
-    width: 50px;
-    height: auto;
-  }
-  .section-container-index .section-container-right .section-container-right_bottom .section-container-right_text {
-    margin: 5px 0 0 0;
-    align-items: center;
-  }
-  .section-container-index .section-container-right .section-container-right_bottom .section-container-right_text .awards-year {
-    font-size: 0.8rem;
   }
 }
 @media screen and (max-width: 480px) {
@@ -12819,6 +12758,7 @@ header .others-container .others-container-right .logReg-container .logReg-conta
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  position: relative;
 }
 
 :root {

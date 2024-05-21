@@ -7,6 +7,7 @@ footer {
   display: flex;
   justify-content: space-around;
   overflow: hidden;
+  margin-top: 150px;
   .footer-container-l {
     display: flex;
     width: 50%;
@@ -89,7 +90,6 @@ footer {
 //responsive at max 1280px//
 @media screen and (max-width: 1280px) {
   footer {
-    position: absolute;
     height: fit-content;
     justify-content: space-around;
     align-items: center;
