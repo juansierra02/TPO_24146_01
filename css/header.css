@@ -47,6 +47,9 @@ header .navigator-container ul li a:hover {
 header .navigator-container ul li:hover {
   transform: translateY(-2px);
 }
+header .navigator-container ul .cell-icon {
+  display: none;
+}
 header .others-container {
   display: flex;
   width: 100%;
@@ -171,6 +174,35 @@ header .others-container .others-container-right .logReg-container .logReg-conta
     color: white;
     scale: 1.2;
     transition: all ease-in-out 0.2s;
+  }
+}
+@media screen and (max-width: 480px) {
+  header {
+    padding: 0 0 0 0;
+  }
+  header .navigator-container {
+    padding: 15px 10px 10px 10px;
+    width: 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    font-weight: 500;
+  }
+  header .navigator-container ul {
+    width: 100%;
+    justify-content: center;
+  }
+  header .navigator-container ul li {
+    padding: 0 3px 0 3px;
+  }
+  header .navigator-container ul li a:hover {
+    font-weight: 600;
+  }
+  header .navigator-container ul .cell-icon {
+    display: flex;
+    padding: 0 3px 0 5px;
+  }
+  header .others-container {
+    display: none;
   }
 }
 

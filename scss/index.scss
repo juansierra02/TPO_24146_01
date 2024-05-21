@@ -150,7 +150,8 @@
       align-items: center;
       margin-top: 20px;
       .section-container-middle_logo {
-        width: 400px;
+        width: 30%;
+        height: auto;
       }
       .section-container-middle_bottom {
         width: 400px;
@@ -207,6 +208,95 @@
       }
       .section-container-middle_bottom {
         width: 400px;
+        .section-container-middle_text {
+          width: 100%;
+        }
+      }
+    }
+    .section-container-right {
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      margin-top: 30px;
+      .section-container-right_up {
+        flex-direction: column;
+        height: fit-content;
+        width: fit-content;
+        justify-content: center;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        img {
+          width: 50px;
+          height: auto;
+        }
+        .section-container-right_text {
+          margin: 5px 0 0 0;
+          align-items: center;
+          .awards-year {
+            font-size: 0.8rem;
+          }
+        }
+      }
+      .section-container-right_mid {
+        flex-direction: column;
+        height: fit-content;
+        width: fit-content;
+        justify-content: center;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        img {
+          width: 50px;
+          height: auto;
+        }
+        .section-container-right_text {
+          margin: 5px 0 0 0;
+          align-items: center;
+          .awards-year {
+            font-size: 0.8rem;
+          }
+        }
+      }
+      .section-container-right_bottom {
+        flex-direction: column;
+        height: fit-content;
+        width: fit-content;
+        justify-content: center;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        img {
+          width: 50px;
+          height: auto;
+        }
+        .section-container-right_text {
+          margin: 5px 0 0 0;
+          align-items: center;
+          .awards-year {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+//responsive at max 480px//
+@media screen and (max-width: 480px) {
+  .section-container-index {
+    .section-container-middle {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: fit-content;
+      align-items: center;
+      margin-top: 20px;
+      .section-container-middle_logo {
+        width: 150px;
+        height: auto;
+      }
+      .section-container-middle_bottom {
+        width: 90%;
         .section-container-middle_text {
           width: 100%;
         }

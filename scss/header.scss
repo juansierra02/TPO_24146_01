@@ -44,6 +44,9 @@ header {
       li:hover {
         transform: translateY(-2px);
       }
+      .cell-icon {
+        display: none;
+      }
     }
   }
   .others-container {
@@ -185,6 +188,37 @@ header {
           }
         }
       }
+    }
+  }
+}
+
+//responsive at max 480px//
+@media screen and (max-width: 480px) {
+  header {
+    padding: 0 0 0 0;
+    .navigator-container {
+      padding: 15px 10px 10px 10px;
+      width: 100%;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      font-weight: 500;
+      ul {
+        width: 100%;
+        justify-content: center;
+        li {
+          padding: 0 3px 0 3px;
+          a:hover {
+            font-weight: 600;
+          }
+        }
+        .cell-icon {
+          display: flex;
+          padding: 0 3px 0 5px;
+        }
+      }
+    }
+    .others-container {
+      display: none;
     }
   }
 }

@@ -94,7 +94,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    bottom: auto;
+    // bottom: auto;
     .footer-container-l {
       width: 100%;
       align-items: center;
@@ -152,7 +152,6 @@ footer {
 @media screen and (max-width: 768px) {
   footer {
     background-color: rgba(0, 0, 0, 0.8);
-    // bottom: 0;
     font-weight: bold;
     .footer-container-l {
       flex-direction: column;
