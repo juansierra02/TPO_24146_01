@@ -12305,7 +12305,7 @@ header .others-container .others-container-right .logReg-container .logReg-conta
   justify-content: center;
   height: fit-content;
   width: 100%;
-  padding-bottom: 150px;
+  padding-bottom: 100px;
 }
 .reservations-container .section-container-reservations .section-container-reservations_inner {
   background-color: rgba(0, 0, 0, 0.9);
@@ -12472,6 +12472,7 @@ header .others-container .others-container-right .logReg-container .logReg-conta
 
 @media screen and (max-width: 768px) {
   .reservations-container .section-container-reservations {
+    padding-bottom: 150px;
     margin-bottom: 150px;
   }
   .reservations-container .section-container-reservations .section-container-reservations_inner {
