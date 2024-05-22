@@ -12237,6 +12237,64 @@ header .others-container .others-container-right .logReg-container .logReg-conta
     display: none;
   }
 }
+.menu-container {
+  display: flex;
+  flex-direction: column;
+}
+.menu-container .title-container {
+  margin-top: 80px;
+}
+.menu-container .title-container h3, .menu-container .title-container .h3 {
+  color: white;
+}
+.menu-container .cards-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 20px 100px 20px;
+  flex-wrap: wrap;
+}
+.menu-container .cards-container .card {
+  width: 350px;
+  height: 450px;
+  margin: 30px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+  transition: all 400ms ease-out;
+  cursor: default;
+}
+.menu-container .cards-container .card figure {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+.menu-container .cards-container .card figure img {
+  width: 100%;
+  height: auto;
+}
+.menu-container .cards-container .card .card-content {
+  padding: 15px;
+  text-align: center;
+}
+.menu-container .cards-container .card .card-content h3, .menu-container .cards-container .card .card-content .h3 {
+  margin-bottom: 15px;
+  color: #7a7a7a;
+}
+.menu-container .cards-container .card .card-content p {
+  line-height: 1.8;
+  color: #6a6a6a;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.menu-container .cards-container .card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+
 .reservations-container {
   display: flex;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0) 100%);
