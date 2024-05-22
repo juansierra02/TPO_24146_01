@@ -34,7 +34,6 @@
   width: 80%;
 }
 .section-container-index .section-container-middle .section-container-middle_bottom .section-container-middle_text {
-  -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(2px 2px 1px #161616);
   width: 408px;
   height: auto;
