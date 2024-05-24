@@ -12946,7 +12946,7 @@ header .others-container .others-container-right .logReg-container .logReg-conta
   transition-duration: 0.3s;
   background-color: transparent;
 }
-.socials-container .socials-container-button .fa-xl {
+.socials-container .socials-container-button a .fa-xl {
   line-height: 1;
   padding: 0 5px 0 5px;
   color: rgba(255, 255, 255, 0.7);

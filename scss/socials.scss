@@ -14,15 +14,17 @@
     overflow: hidden;
     transition-duration: 0.3s;
     background-color: transparent;
-    .fa-xl {
-      line-height: 1;
-      padding: 0 5px 0 5px;
-      color: rgba(255, 255, 255, 0.7);
-      height: 24px;
-      width: 24px;
-      margin: 0;
-      align-self: center;
-      justify-self: center;
+    a {
+      .fa-xl {
+        line-height: 1;
+        padding: 0 5px 0 5px;
+        color: rgba(255, 255, 255, 0.7);
+        height: 24px;
+        width: 24px;
+        margin: 0;
+        align-self: center;
+        justify-self: center;
+      }
     }
   }
   .text {
