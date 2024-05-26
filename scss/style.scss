@@ -30,6 +30,18 @@
   --animate-duration: 1s;
 }
 
+.animate__animated.animate__fadeIn {
+  --animate-duration: 1.5s;
+}
+
+.animate__animated.animate__fadeInUp {
+  --animate-duration: 2s;
+}
+
+.animate__animated.animate__fadeInDown {
+  --animate-duration: 1.5s;
+}
+
 //general index//
 body {
   background-image: url("../static/img/slide1.jpeg");

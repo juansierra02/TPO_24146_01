@@ -13364,6 +13364,18 @@ header .others-container .others-container-right .logReg-container .logReg-conta
   --animate-duration: 1s;
 }
 
+.animate__animated.animate__fadeIn {
+  --animate-duration: 1.5s;
+}
+
+.animate__animated.animate__fadeInUp {
+  --animate-duration: 2s;
+}
+
+.animate__animated.animate__fadeInDown {
+  --animate-duration: 1.5s;
+}
+
 body {
   background-image: url("../static/img/slide1.jpeg");
   height: 100%;
