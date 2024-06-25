@@ -12,6 +12,7 @@
 @import "reservations.scss";
 @import "socials.scss";
 @import "index.scss";
+@import "reservation_list.scss";
 
 //formatting//
 * {
@@ -61,6 +62,9 @@ body {
       padding-bottom: 80px;
     }
   }
+  .oculto {
+    display: none;
+}
 }
 
 p {
@@ -76,3 +80,4 @@ p {
     background-position: top center;
   }
 }
+

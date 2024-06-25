@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!--hojas de estilo css-->
     <link rel="stylesheet" href="../css/style.css" />
+    <!-- dataTable -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.css" />
     <!--sweet alert-->
     <link rel="stylesheet" href="../js/sweetalert2/sweetalert2.min.css" />
     <script src="../js/sweetalert2/sweetalert2.all.min.js" defer></script>
@@ -22,8 +24,9 @@
     <!-- fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
     <!--title of tab-->
-    <title>Reservas</title>
+    <title>Our Menu</title>
   </head>
 
   <body>
@@ -80,83 +83,44 @@
           </div>
         </div>
       </header>
-      <section class="reservations-container">
-        <div class="section-container-reservations animate__animated animate__zoomIn">
-          <div class="section-container-reservations_inner">
-            <div class="section-container-reservations-banner">
-              <img class="bannera" src="../static/img/banner.png" alt="logo banner" />
-              <img class="bannerb" src="../static/img/bannerb.png" alt="logo banner" />
-            </div>
-            <div class="section-container_inner">
-              <div class="section-container_inner_top">
-                <h6>Conoce <strong>Comida Andina</strong></h6>
-                <div class="section-container_inner_top_main">
-                  <p>
-                    Reserva una mesa o el menú del día, pide que lleven la
-                    comida a tu hogar o expresa tu opinión sobre nuestro
-                    restaurante.
-                  </p>
-                </div>
-                <p>Servicio a domicilio sin costo a 5 Km a la redonda.</p>
-                <p>
-                  Recibe <strong>un trago de Fernet de cortesía </strong>con tu
-                  plato de picada, a partir de las 4pm.
-                </p>
-                <p>
-                  <strong>Reservas</strong> únicamente vía telefónica o whatsapp
-                  al: <a href="tel:11-2254-3743">(11) 2254 3743</a>
-                </p>
-              </div>
-              <div class="section-container_inner_bottom">
-                <form id="form_reservas" method="post" aria-label="Contact form" novalidate="novalidate"
-                  data-status="init">
-                  <div class="form-container_top">
-                    <div class="form-container_top_left">
-                      <p>Nombre</p>
-                      <input type="text" name="your-name" />
-                    </div>
-                    <div class="form-container_top_right">
-                      <p>Email</p>
-                      <input type="email" name="your-email" />
-                    </div>
-                  </div>
-                  <div class="form-container_top">
-                    <div class="form-container_top_left">
-                      <p>Asunto</p>
-                      <input type="text" name="your-subject" />
-                    </div>
-                    <div class="form-container_top_right">
-                      <p>Motivo</p>
-                      <select name="motivo" id="motivo">
-                        <option data-display="Motivo">------</option>
-                        <option value="Reservas">Reservas</option>
-                        <option value="Shows">Shows</option>
-                        <option value="Menú">Menú</option>
-                        <option value="Eventos">Eventos</option>
-                        <option value="Otros">Otros</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="form-container_middle">
-                    <p>Mensaje</p>
-                    <textarea rows="6" name="your-message"></textarea>
-                  </div>
-                  <div class="form-container_bottom">
-                    <div class="form-container_bottom_left">
-                      <input type="submit" value="Enviar" />
-                    </div>
-                    <div class="form-container_bottom_right">
-                      <label for="receive-menu"><input type="checkbox" id="receive-menu" name="receive-menu" />
-                        ¿Desea recibir el menú del día?
-                      </label>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
+
+      <section>
+        <div class="menu-container">
+          <div class="title-container animate__animated animate__fadeInDown">
+            <h1>Listado de Reservaciones</h1>
+          </div>
+          <div class="cards-container animate__animated animate__fadeInUp">
+            <table id="myTable" class="display">
+              <thead>
+                  <tr>
+                      <th>Nombre</th>
+                      <th>Email</th>
+                      <th>Asunto</th>
+                      <th>Motivo</th>
+                      <th>Mensaje</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>Juan Pérez</td>
+                      <td>juan@example.com</td>
+                      <td>Consulta</td>
+                      <td>Reserva</td>
+                      <td>Quisiera hacer una reserva para este fin de semana.</td>
+                  </tr>
+                  <tr>
+                      <td>María Gómez</td>
+                      <td>maria@example.com</td>
+                      <td>Información</td>
+                      <td>General</td>
+                      <td>Necesito información sobre los servicios disponibles.</td>
+                  </tr>
+              </tbody>
+          </table>
           </div>
         </div>
       </section>
+
       <footer>
         <div class="footer-container-l">
           <aside class="footer-container-l_left">
@@ -173,7 +137,6 @@
               </li>
             </ul>
           </aside>
-
           <aside class="footer-container-l_mid">
             <div class="footer-container-l_mid_socials">
               <a href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook fa-xl"></i></a>
@@ -182,7 +145,6 @@
               <a href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
             </div>
           </aside>
-
           <aside class="footer-container-l_right">
             <p class="footer-container-l_right_title">Datos de relevancia:</p>
             <p>Domicilio: Av. del Libertador 4450</p>
@@ -197,6 +159,7 @@
       </footer>
     </div>
     <script src="../js/main.js"></script>
+    <script src="http://cdn.datatables.net/2.0.8/js/dataTables.min.js"></script>
   </body>
 
 </html>

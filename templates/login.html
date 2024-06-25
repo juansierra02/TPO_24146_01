@@ -4,6 +4,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!--favicon-->
     <link rel="icon" type="image/jpg" href="../static/img/favicon.ico" />
     <!--Animate.css-->
@@ -36,6 +38,10 @@
             <li><a href="about_us.html">Nosotros</a></li>
             <li>|</li>
             <li><a href="reservations.html">Reservas</a></li>
+            <li>|</li>
+            <li id="btn_lista_reservas" class="oculto">
+              <a href="reservation_list.html">Listado de Reservas</a>
+            </li>
             <li class="cell-icon">
               <a class="logReg-container_icons" onclick="login();"><i class="fa-regular fa-user"></i></a>
             </li>
@@ -65,7 +71,8 @@
               </div>
             </div>
             <div class="logReg-container">
-              <a class="logReg-container_login" onclick="login();">Login /</a>
+              <a id="loginButton" class="logReg-container_login " >Login /</a>
+              <a id="logoutButton" class="logReg-container_login oculto" >Logout /</a>
               <a class="logReg-container_icons" onclick="login();"><i class="fa-regular fa-user"></i></a>
               <a class="logReg-container_register" href="register.html">Registrarse</a>
               <a class="logReg-container_icons" href="templates/register.html"><i class="fa-solid fa-user-plus"></i></a>
